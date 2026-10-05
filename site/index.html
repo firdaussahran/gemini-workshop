@@ -1,0 +1,1911 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop: Gemini AI in Academic Writing</title>
+  <meta name="description" content="A hands-on workshop on using Google Gemini responsibly and effectively in academic writing.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=2026-10-06g">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" data-route="home" aria-label="Workshop home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2c.6 5.2 4.8 9.4 10 10-5.2.6-9.4 4.8-10 10-.6-5.2-4.8-9.4-10-10 5.2-.6 9.4-4.8 10-10z" fill="url(#g)"/><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f8cff"/><stop offset="1" stop-color="#a66cff"/></linearGradient></defs></svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-kicker">Workshop</span>
+          <span class="brand-title">Gemini AI in Academic Writing</span>
+        </span>
+      </a>
+      <a class="header-logo" href="https://www.um.edu.my" target="_blank" rel="noopener" aria-label="Universiti Malaya website (opens in a new tab)">
+        <picture>
+          <source srcset="img/um-logo.webp" type="image/webp">
+          <img src="img/um-logo.png" alt="Universiti Malaya" width="753" height="240">
+        </picture>
+      </a>
+    </div>
+
+    <nav class="tabs" aria-label="Training modules">
+      <div class="container">
+        <ul class="tab-list" role="tablist">
+          <li><a role="tab" href="#module-1" data-route="module-1"><span class="tab-num">1</span>Getting Started</a></li>
+          <li><a role="tab" href="#module-2" data-route="module-2"><span class="tab-num">2</span>Prompting Essentials</a></li>
+          <li><a role="tab" href="#module-3" data-route="module-3"><span class="tab-num">3</span>Literature &amp; Research</a></li>
+          <li><a role="tab" href="#module-4" data-route="module-4"><span class="tab-num">4</span>Drafting &amp; Structure</a></li>
+          <li><a role="tab" href="#module-5" data-route="module-5"><span class="tab-num">5</span>Editing &amp; Language</a></li>
+          <li><a role="tab" href="#module-6" data-route="module-6"><span class="tab-num">6</span>Ethics &amp; Integrity</a></li>
+          <li><a role="tab" href="#module-7" data-route="module-7"><span class="tab-num">7</span>Conclusion</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ================= FRONT PAGE ================= -->
+    <section class="page" id="page-home" data-page="home">
+      <div class="hero">
+        <div class="container hero-grid">
+          <div class="hero-main">
+            <p class="eyebrow">Hands-on training workshop</p>
+            <h1>Workshop: Gemini AI in Academic Writing</h1>
+            <p class="lead">Learn to use Google Gemini as a thinking partner for research and writing: faster literature work, clearer drafts and sharper editing, while keeping your scholarship honest, original and your own.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#module-1">Start Module 1</a>
+              <a class="btn btn-ghost" href="#module-6">Read the integrity guidelines</a>
+            </div>
+          </div>
+
+          <aside class="speaker-card" aria-labelledby="speaker-name">
+            <p class="speaker-label">Speaker</p>
+            <div class="speaker-photo">
+              <!-- Photo: site/img/speaker.png (transparent background) + speaker.webp; initials show if the photo is missing -->
+              <span class="speaker-initials" aria-hidden="true">FS</span>
+              <picture>
+                <source srcset="img/speaker.webp" type="image/webp">
+                <img src="img/speaker.png" alt="Dr Firdaus Sahran" width="640" height="640" onerror="this.closest('picture').remove()">
+              </picture>
+            </div>
+            <h2 class="speaker-name" id="speaker-name">Dr Firdaus Sahran</h2>
+            <p class="speaker-role">Senior Lecturer</p>
+            <p class="speaker-org">Fakulti Sains Komputer &amp; Teknologi Maklumat<br>Universiti Malaya</p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="info-strip">
+          <div><strong>Who it's for</strong><span>Postgraduates, early-career researchers and academic staff</span></div>
+          <div><strong>Format</strong><span>6 modules + conclusion · examples · hands-on exercises</span></div>
+          <div><strong>You'll need</strong><span>A Google account and access to <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a></span></div>
+        </div>
+
+        <h2 class="section-title">Workshop modules</h2>
+        <div class="module-grid">
+          <a class="module-card" href="#module-1">
+            <span class="card-num">01</span>
+            <h3>Getting Started with Gemini</h3>
+            <p>What Gemini is, Free vs paid plans vs Workspace for Education (Malaysian pricing), a tour of the interface, and what it can and cannot do.</p>
+          </a>
+          <a class="module-card" href="#module-2">
+            <span class="card-num">02</span>
+            <h3>Prompting Essentials</h3>
+            <p>The anatomy of a good prompt, a reusable framework, and how to refine output through conversation.</p>
+          </a>
+          <a class="module-card" href="#module-3">
+            <span class="card-num">03</span>
+            <h3>Literature &amp; Research</h3>
+            <p>Why Gemini can't search Web of Science or paywalled databases, grounding your reading in Gemini Notebook, drafting a short literature review from it, and verifying every source.</p>
+          </a>
+          <a class="module-card" href="#module-4">
+            <span class="card-num">04</span>
+            <h3>Drafting &amp; Structure</h3>
+            <p>Outlines, paragraph logic, abstracts and introductions, plus Gems, Canvas and Nano Banana for quick drafting, documentation and research diagrams.</p>
+          </a>
+          <a class="module-card" href="#module-5">
+            <span class="card-num">05</span>
+            <h3>Editing &amp; Language</h3>
+            <p>Clarity, concision, academic tone, simulated peer review, drafting in your own voice, and fixing output that misses the mark.</p>
+          </a>
+          <a class="module-card" href="#module-6">
+            <span class="card-num">06</span>
+            <h3>Ethics &amp; Integrity</h3>
+            <p>Universiti Malaya's AI policy and levels of AI use, disclosure, authorship, data privacy and publisher policies.</p>
+          </a>
+          <a class="module-card module-card-wide" href="#module-7">
+            <span class="card-num">07</span>
+            <h3>Conclusion &amp; Next Steps</h3>
+            <p>The key lessons on one page, a toolkit for choosing the right Gemini feature, five questions to ask before every use, and a four-week plan to keep learning on your own.</p>
+          </a>
+        </div>
+
+        <div class="callout callout-principle">
+          <h3>The guiding principle</h3>
+          <p><strong>Gemini assists; you author.</strong> Every claim, citation and conclusion in your work must be one you have checked, understood and can defend. Use AI to think better and work faster, never to replace your judgement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 1 ================= -->
+    <section class="page" id="page-module-1" data-page="module-1" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 1</p>
+          <h1>Getting Started with Gemini</h1>
+          <p class="lead">Set up your access, learn your way around, and build an accurate mental model of what a large language model is.</p>
+        </header>
+
+        <div class="objectives">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Access Gemini and manage your chats and settings</li>
+            <li>Compare the Free, paid (AI Plus/Pro) and Google Workspace for Education versions, including Malaysian pricing, Gemini Notebook and data protection</li>
+            <li>Explain, in plain terms, how a large language model generates text: tokens, next-token prediction and the context window</li>
+            <li>Identify tasks where Gemini helps, and where it is risky</li>
+          </ul>
+        </div>
+
+        <h2>1.1 What is Gemini?</h2>
+        <p>Gemini is Google's family of large language models (LLMs), available as a chat assistant at <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a>, as a mobile app, and inside Google Workspace (Docs, Gmail, Drive) for eligible accounts.</p>
+        <p>An LLM predicts plausible text based on patterns learned from vast amounts of data. It does <em>not</em> look facts up in a database by default. This is why it can write fluently and still be confidently wrong.</p>
+
+        <h2>1.2 How a large language model generates text</h2>
+        <p>Knowing what happens "under the hood" explains both why Gemini writes so fluently and why it sometimes invents things. Four steps explain it: text becomes <strong>tokens</strong>, the model makes a <strong>next-token prediction</strong> one token at a time, <strong>fluent output is not necessarily true</strong>, and it can only work with what fits in its <strong>context window</strong>.</p>
+
+        <h3>Step 1: Text is broken into tokens</h3>
+        <p>An LLM doesn't read words or letters. It reads <strong>tokens</strong>: common chunks of characters. Frequent words are usually a single token, while rarer words, other languages, numbers and codes are split into several pieces. Each coloured block below is one token.</p>
+
+        <div class="token-demo">
+          <div class="token-row">
+            <span class="token-label">English<small>5 words → 7 tokens</small></span>
+            <span class="tokens"><span class="tok c1">Academic</span><span class="tok c2"> writing</span><span class="tok c3"> requires</span><span class="tok c4"> careful</span><span class="tok c5"> cit</span><span class="tok c1">ation</span><span class="tok c2">.</span></span>
+          </div>
+          <div class="token-row">
+            <span class="token-label">Bahasa Melayu<small>6 words → 13 tokens</small></span>
+            <span class="tokens"><span class="tok c1">Pen</span><span class="tok c2">ulis</span><span class="tok c3">an</span><span class="tok c4"> akadem</span><span class="tok c5">ik</span><span class="tok c1"> memer</span><span class="tok c2">lukan</span><span class="tok c3"> pet</span><span class="tok c4">ikan</span><span class="tok c5"> yang</span><span class="tok c1"> tel</span><span class="tok c2">iti</span><span class="tok c3">.</span></span>
+          </div>
+          <div class="token-row">
+            <span class="token-label">A DOI<small>1 identifier → 15 tokens</small></span>
+            <span class="tokens"><span class="tok c1">doi</span><span class="tok c2">:</span><span class="tok c3">10</span><span class="tok c4">.</span><span class="tok c5">101</span><span class="tok c1">6</span><span class="tok c2">/j</span><span class="tok c3">.comp</span><span class="tok c4">edu</span><span class="tok c5">.</span><span class="tok c1">202</span><span class="tok c2">3</span><span class="tok c3">.</span><span class="tok c4">104</span><span class="tok c5">812</span></span>
+          </div>
+          <p class="token-caption">Illustrative: exact splits differ between models. As a rule of thumb, one English token is about ¾ of a word, and Malay and other languages often need more tokens per word.</p>
+        </div>
+
+        <div class="callout callout-tip">
+          <h3>Why this matters</h3>
+          <p>A DOI, page range or statistic is not stored as one fact. It is produced <em>piece by piece</em>, so a single wrong digit gives you a DOI that looks perfect but points nowhere. Plan limits such as "~50 pages per chat" (see 1.4) are really token limits, and non-English text uses them up faster.</p>
+        </div>
+
+        <h3>Step 2: It predicts the next token, one at a time</h3>
+        <p>Given the text so far, the model calculates a probability for every possible next token, picks one (usually a likely one, with some randomness), adds it to the text and repeats. Step through the demo below to watch a sentence being built.</p>
+
+        <div class="nt-demo" id="nt-demo">
+          <div class="nt-output" aria-live="polite">
+            <span class="nt-label">Text so far</span>
+            <p class="nt-text" id="nt-text"></p>
+          </div>
+          <div class="nt-candidates">
+            <span class="nt-label" id="nt-cand-label">Candidates for the next token</span>
+            <ol class="nt-bars" id="nt-bars"></ol>
+          </div>
+          <div class="nt-controls">
+            <button type="button" class="btn-small btn-solid" id="nt-next">Predict next token ▶</button>
+            <button type="button" class="btn-small" id="nt-reset">Reset</button>
+            <span class="nt-step" id="nt-step"></span>
+          </div>
+          <p class="token-caption">Probabilities are illustrative. Notice the near-tie at step 6 ("clarity" 27% vs "quality" 26%): this is why the same prompt can give different answers each time.</p>
+        </div>
+
+        <p>Nothing in this process looks anything up or checks whether the sentence is true. The model chooses what is <strong>statistically likely to come next</strong>, based on patterns in its training data. Most of the time, likely text is also correct text. When it isn't, the output is still fluent and confident.</p>
+
+        <h3>Step 3: Fluent is not the same as true</h3>
+        <p>Here is how a fabricated citation happens. Asked for evidence, the model produces something with the <em>shape</em> of a reference: an author name common in the field, a recent year, a percentage, a journal-like title and a DOI-like string. Each token is plausible on its own; the combination may not exist.</p>
+
+        <div class="risk-demo">
+          <p class="risk-label">Ungrounded answer (ordinary chat, no sources)</p>
+          <p class="risk-text"><span class="rk red">Doe et al. (2021)</span> found that <span class="rk amber">AI feedback improved essay quality</span> by <span class="rk red">23%</span> (<span class="rk red">Journal of Imaginary Studies, 14(2), 45–61</span>, <span class="rk red">doi:10.1016/j.jis.2021.04.012</span>).</p>
+          <p class="risk-label">Grounded answer (Gemini Notebook, using a PDF you added)</p>
+          <p class="risk-text"><span class="rk green">The authors report that students who received automated feedback revised more often than the control group</span> <span class="cite-chip">[1]</span>, <span class="rk amber">which suggests feedback may support revision habits</span>.</p>
+          <ul class="risk-legend">
+            <li><span class="rk green">Green</span>: traceable to a source you supplied. Still click the citation and check it.</li>
+            <li><span class="rk amber">Amber</span>: a plausible generalisation or interpretation. Decide whether you agree, and support it with evidence.</li>
+            <li><span class="rk red">Red</span>: specific details (names, years, numbers, titles, DOIs) with no source behind them. Verify or delete.</li>
+          </ul>
+        </div>
+
+        <h3>Step 4: It only sees what fits in its context window</h3>
+        <p>Everything the model can "see" at once (your instructions, uploaded files and the conversation so far) has to fit in its <strong>context window</strong>, which is measured in tokens. Anything outside it, including earlier chats, is not available unless you add it again.</p>
+        <div class="ctx-bar" role="img" aria-label="Illustration: a context window filled by your prompt, an uploaded paper and the conversation, with remaining space">
+          <span class="ctx-seg ctx-a" style="flex: 1">Your prompt</span>
+          <span class="ctx-seg ctx-b" style="flex: 5">Uploaded paper (≈ 12,000 tokens)</span>
+          <span class="ctx-seg ctx-c" style="flex: 3">Conversation so far</span>
+          <span class="ctx-seg ctx-free" style="flex: 2">Space left</span>
+        </div>
+        <p class="token-caption">Shown at roughly Free-plan scale: one 12,000-token paper already fills almost half the window.</p>
+
+        <h4 class="ctx-cmp-title">How big is the window on each plan?</h4>
+        <p>The window size is one of the biggest differences between plans (see the table in 1.4). The bars are drawn to scale:</p>
+        <ul class="ctx-compare" aria-label="Context window size by plan, drawn to scale">
+          <li>
+            <span class="cc-plan">Free</span>
+            <span class="cc-track"><span class="cc-fill cc-free" style="width: 3.2%"></span></span>
+            <span class="cc-size"><strong>~32,000 tokens</strong> · ~50 pages</span>
+            <span class="cc-fits">About one or two journal articles plus your conversation</span>
+          </li>
+          <li>
+            <span class="cc-plan">Google AI Plus</span>
+            <span class="cc-track"><span class="cc-fill cc-plus" style="width: 12.8%"></span></span>
+            <span class="cc-size"><strong>~128,000 tokens</strong> · ~200 pages</span>
+            <span class="cc-fits">About 6–8 articles, or one thesis chapter with its key sources</span>
+          </li>
+          <li>
+            <span class="cc-plan">Google AI Pro</span>
+            <span class="cc-track"><span class="cc-fill cc-pro" style="width: 100%"></span></span>
+            <span class="cc-size"><strong>~1,000,000 tokens</strong> · ~1,500 pages</span>
+            <span class="cc-fits">A full thesis draft plus dozens of papers in one chat</span>
+          </li>
+          <li>
+            <span class="cc-plan">Workspace for Education</span>
+            <span class="cc-track"><span class="cc-fill cc-ws" style="width: 100%"></span></span>
+            <span class="cc-size"><strong>Higher than Free</strong> · ~1,500 pages with add-on</span>
+            <span class="cc-fits">Depends on your university's edition and whether it has the AI Pro for Education add-on</span>
+          </li>
+        </ul>
+        <p class="note">Indicative mid-2026 figures that change often. "Pages" assume English text; Bahasa Melayu and other languages use more tokens per word (Step 1), so fewer pages fit.</p>
+
+        <div class="feature-grid">
+          <div class="feature"><h4>Signs you've hit the limit</h4><p>Gemini forgets instructions from early in the chat, misses parts of a long document, or contradicts what it said before. It usually won't tell you.</p></div>
+          <div class="feature"><h4>Work within it</h4><p>Go section by section, or start a fresh chat with a short brief of what matters (the reset prompt in 5.6).</p></div>
+          <div class="feature"><h4>Go beyond it</h4><p>For a large reading list, use Gemini Notebook (3.4). It works across many sources and cites them, instead of holding everything in one chat.</p></div>
+        </div>
+
+        <div class="objectives key-points">
+          <h2>Key points to remember</h2>
+          <ul>
+            <li><strong>Tokens, not words:</strong> text is processed in chunks, and numbers, codes and non-English words use more of them.</li>
+            <li><strong>Prediction, not lookup:</strong> answers are generated from patterns, not retrieved from a database, unless the tool is grounded in sources (web search or Gemini Notebook).</li>
+            <li><strong>Randomness:</strong> the same prompt can produce different answers, so regenerate and compare when it matters.</li>
+            <li><strong>Limited memory:</strong> only what fits in the context window is used, and training data has a cut-off date.</li>
+            <li><strong>Confidence is not evidence:</strong> fluent, specific-sounding details are exactly where fabrication hides.</li>
+          </ul>
+        </div>
+
+        <h2>1.3 Getting access</h2>
+        <ol class="steps">
+          <li>Go to <a href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a> and sign in with your Google account. If your university provides Google Workspace for Education (often your student or staff email), sign in with that account instead, because it comes with stronger data protection.</li>
+          <li>Review <strong>Settings → Activity</strong> to understand how your conversations are stored and whether they may be used to improve Google's services.</li>
+          <li>Start a new chat for each distinct task. Separate chats keep context clean and outputs focused.</li>
+        </ol>
+
+        <h2>1.4 Which Gemini are you using? Free, paid plans and Workspace for Education</h2>
+        <p>The plans share the same interface but differ in capability, Gemini Notebook limits and, most importantly for researchers, <strong>how your data is handled</strong>. Prices below are for Malaysia.</p>
+
+        <div class="plan-table">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Feature</span></th>
+                <th scope="col">Free<small>Personal Google account</small></th>
+                <th scope="col">Google AI Plus<small>Personal, paid</small></th>
+                <th scope="col">Google AI Pro<small>Personal, paid</small></th>
+                <th scope="col" class="plan-ws">Workspace for Education<small>University account (Gemini for Education)</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Price (Malaysia)</th>
+                <td data-plan="Free">RM0</td>
+                <td data-plan="AI Plus">RM23.99<wbr>/month<br><span class="hl">Free for 12 months for students*</span></td>
+                <td data-plan="AI Pro">RM97.99<wbr>/month<br><span class="hl">RM23.99 for students*</span></td>
+                <td data-plan="Workspace Edu" class="plan-ws">Included**<br><span class="hl">Paid add-on optional†</span></td></tr>
+              <tr><th scope="row">Models</th>
+                <td data-plan="Free">Fast model; limited Pro use</td>
+                <td data-plan="AI Plus">More Pro use</td>
+                <td data-plan="AI Pro">Full Pro access</td>
+                <td data-plan="Workspace Edu" class="plan-ws">Premium models</td></tr>
+              <tr><th scope="row">Text per chat</th>
+                <td data-plan="Free">~50 pages</td>
+                <td data-plan="AI Plus">~200 pages</td>
+                <td data-plan="AI Pro">~1,500 pages</td>
+                <td data-plan="Workspace Edu" class="plan-ws">Higher; ~1,500 pages†</td></tr>
+              <tr><th scope="row">Deep Research</th>
+                <td data-plan="Free">A few per month</td>
+                <td data-plan="AI Plus">More</td>
+                <td data-plan="AI Pro">Many per day</td>
+                <td data-plan="Workspace Edu" class="plan-ws">Higher; more†</td></tr>
+              <tr><th scope="row">Gemini Notebook<br><small>notebooks × sources</small></th>
+                <td data-plan="Free">100 × 50</td>
+                <td data-plan="AI Plus">200 × 100</td>
+                <td data-plan="AI Pro">500 × 300</td>
+                <td data-plan="Workspace Edu" class="plan-ws">✔ Included; 5× limits†</td></tr>
+              <tr><th scope="row">Gemini in Gmail &amp; Docs</th>
+                <td data-plan="Free">Limited</td>
+                <td data-plan="AI Plus">✔ Personal apps</td>
+                <td data-plan="AI Pro">✔ Personal apps</td>
+                <td data-plan="Workspace Edu" class="plan-ws">✔ Full access†</td></tr>
+              <tr class="row-privacy"><th scope="row">Chats used to train models / read by reviewers</th>
+                <td data-plan="Free"><span class="no">Yes, by default</span></td>
+                <td data-plan="AI Plus"><span class="no">Yes, by default</span></td>
+                <td data-plan="AI Pro"><span class="no">Yes, by default</span></td>
+                <td data-plan="Workspace Edu" class="plan-ws"><span class="yes">No</span></td></tr>
+              <tr><th scope="row">University data agreement &amp; admin controls</th>
+                <td data-plan="Free">✘</td>
+                <td data-plan="AI Plus">✘</td>
+                <td data-plan="AI Pro">✘</td>
+                <td data-plan="Workspace Edu" class="plan-ws">✔</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">* Student offers are for college and university students aged 18 and above, valid until 31 December 2026. Google AI Ultra starts from RM429.99/month. ** Gemini for Education is part of every Google Workspace for Education edition, but your university decides whether to switch it on and whether to buy the AI Pro for Education add-on. Users under 18 get a restricted experience. † With the Google AI Pro for Education add-on, purchased by the university. Prices and limits are indicative as of mid-2026 and change often. Check <a href="https://gemini.google/subscriptions/" target="_blank" rel="noopener">gemini.google/subscriptions</a> and your university's IT department (e.g. its Pusat Teknologi Maklumat) for current details.</p>
+
+        <div class="callout callout-warn">
+          <h3>Paying does not make it private</h3>
+          <p>Google AI Plus and Pro give you <em>more capability</em>, not <em>more privacy</em>. They run under the same consumer terms as the free version, so conversations may be read by reviewers and used to improve Google's models unless you change your activity settings. This includes the free student offers. For unpublished manuscripts, research data, interview transcripts or anything covered by research ethics approval or the Personal Data Protection Act 2010 (PDPA), use your <strong>university Google Workspace for Education account</strong> if it provides Gemini, and follow your university's data policy.</p>
+        </div>
+
+        <h3>What this means for Gemini Notebook</h3>
+        <ul>
+          <li><strong>Free:</strong> enough for one thesis chapter or a small review, with up to about 50 papers per notebook.</li>
+          <li><strong>AI Plus (free for students until the end of 2026):</strong> about 100 sources per notebook, which is a good fit for most master's and PhD literature reviews.</li>
+          <li><strong>AI Pro:</strong> suits large or systematic reviews (hundreds of sources per notebook), and Notebooks also appear inside the Gemini app, so chat and notebook share the same sources.</li>
+          <li><strong>Workspace for Education:</strong> the safest place for your own drafts, transcripts or unpublished data, because sources and chats are not read by reviewers or used to train models. Gemini Notebook is included, with 5× higher limits if your university has the AI Pro for Education add-on. Ask your IT department whether it is switched on for your account.</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <h3>Which should you use?</h3>
+          <p>Use your <strong>university Google Workspace for Education account</strong> for research work whenever it is available. Students can claim <strong>AI Plus</strong> free for learning and for non-sensitive, public material. Consider <strong>AI Pro</strong> if you need the most capable model or very large notebooks <em>and</em> your material is not confidential.</p>
+        </div>
+
+        <h2>1.5 Interface tour</h2>
+        <div class="feature-grid">
+          <div class="feature"><h4>Prompt box</h4><p>Type instructions, paste text, or attach files such as PDFs, documents and images.</p></div>
+          <div class="feature"><h4>Model selector</h4><p>Choose between faster and more capable models, depending on your plan.</p></div>
+          <div class="feature"><h4>Chat history</h4><p>Revisit, rename, pin or delete earlier conversations.</p></div>
+          <div class="feature"><h4>Response tools</h4><p>Regenerate, edit your prompt, copy, export to Docs, or use "double-check" to search for supporting or conflicting content.</p></div>
+          <div class="feature"><h4>Gems and Canvas</h4><p>Gems are saved assistants with standing instructions; Canvas is a side-by-side document editor. Both are covered in Module 4.</p></div>
+          <div class="feature"><h4>Deep Research</h4><p>Where available, runs multi-step web research and produces a cited report. Verify its sources like any other.</p></div>
+        </div>
+        <p class="note">Features and names change often and vary by plan and region. If something here doesn't match your screen, look for the equivalent option.</p>
+
+        <h2>1.6 Strengths and limitations</h2>
+        <div class="two-col">
+          <div class="pro-box">
+            <h3>Gemini is good at</h3>
+            <ul>
+              <li>Brainstorming and reframing ideas</li>
+              <li>Explaining unfamiliar concepts at different levels</li>
+              <li>Summarising text <em>you provide</em></li>
+              <li>Suggesting structure and outlines</li>
+              <li>Improving clarity, grammar and flow</li>
+              <li>Acting as a critical "reviewer" of your draft</li>
+            </ul>
+          </div>
+          <div class="con-box">
+            <h3>Gemini is risky for</h3>
+            <ul>
+              <li>Generating references, which may be fabricated ("hallucinated")</li>
+              <li>Exact statistics, dates and quotations</li>
+              <li>Up-to-date or niche disciplinary knowledge</li>
+              <li>Writing content you then submit as your own</li>
+              <li>Handling confidential or identifiable data</li>
+              <li>Making final judgements on quality or truth</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exercise">
+          <h3>Hands-on exercise 1</h3>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 15 min</p>
+          <ol>
+            <li>Find out which version you are using: check the account shown in the top-right corner of Gemini (personal or institutional) and any plan badge. Then open <strong>Settings → Activity</strong> and note whether your conversations are being saved and used to improve Google's services. Using the table in 1.4, decide which account you should use for your research.</li>
+            <li>Ask: <em>"List five peer-reviewed papers on [your topic] with DOIs."</em> Check every one in Google Scholar or your library database. How many are real and accurately described? (1.2, 1.6)</li>
+            <li>Discuss: what does this tell you about how you should, and shouldn't, use Gemini?</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="4">
+            <li>Ask Gemini to explain a key concept from your field to a first-year undergraduate, then to an expert reviewer. Compare the two.</li>
+            <li>Regenerate the expert answer twice. What changed between versions, and what stayed the same? Use the next-token demo in 1.2 to explain why.</li>
+          </ol>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#home">← Front page</a>
+          <a class="pager-next" href="#module-2">Module 2: Prompting Essentials →</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 2 ================= -->
+    <section class="page" id="page-module-2" data-page="module-2" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 2</p>
+          <h1>Prompting Essentials</h1>
+          <p class="lead">The quality of Gemini's output depends on the quality of your instructions. Learn a repeatable framework for writing effective prompts.</p>
+        </header>
+
+        <div class="objectives">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Structure prompts with role, task, context, format and constraints</li>
+            <li>Refine output through iterative follow-up prompts</li>
+            <li>Build a personal library of reusable academic prompts</li>
+          </ul>
+        </div>
+
+        <h2>2.1 The RTCFC framework</h2>
+        <div class="framework">
+          <div><span class="fw-letter">R</span><h4>Role</h4><p>Who should Gemini act as?</p><code>"Act as an experienced journal reviewer in public health…"</code></div>
+          <div><span class="fw-letter">T</span><h4>Task</h4><p>What exactly should it do?</p><code>"…evaluate the logical flow of my introduction…"</code></div>
+          <div><span class="fw-letter">C</span><h4>Context</h4><p>Background it needs.</p><code>"…for a Q1 journal; audience is epidemiologists…"</code></div>
+          <div><span class="fw-letter">F</span><h4>Format</h4><p>How the answer should look.</p><code>"…as a table: issue, location, suggested fix…"</code></div>
+          <div><span class="fw-letter">C</span><h4>Constraints</h4><p>Limits and rules.</p><code>"…do not rewrite my text; max 200 words."</code></div>
+        </div>
+
+        <h2>2.2 Weak vs. strong prompts</h2>
+        <div class="compare">
+          <div class="compare-bad">
+            <h4>Weak</h4>
+            <p>"Improve my abstract."</p>
+          </div>
+          <div class="compare-good">
+            <h4>Strong</h4>
+            <p>"You are an editor for an engineering journal. Review the abstract below for clarity and concision. Keep all technical terms and findings unchanged. List your suggested edits as bullet points with a one-line reason each, then show a revised version under 250 words."</p>
+          </div>
+        </div>
+
+        <h2>2.3 Iterate, don't restart</h2>
+        <p>Treat Gemini as a conversation. After the first response, steer it:</p>
+        <ul class="chips">
+          <li>"Make it more concise."</li>
+          <li>"Explain your reasoning for point 3."</li>
+          <li>"That's too informal. Use a formal academic register."</li>
+          <li>"Give me three alternatives."</li>
+          <li>"What are the weaknesses of this argument?"</li>
+          <li>"Ask me questions before you answer."</li>
+        </ul>
+
+        <h2>2.4 Prompt templates</h2>
+        <p>Copy, adapt and save these templates. Text in [brackets] is for you to fill in.</p>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Concept explainer</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Act as a tutor in [discipline]. Explain [concept] to a [level, e.g. master's student] in under 200 words. Then give one concrete example from [context] and one common misconception about it.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Socratic partner</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>I am developing a research argument: [your argument in 2–3 sentences]. Do not agree with me by default. Ask me five probing questions, one at a time, that a sceptical examiner would ask. Wait for my answer before asking the next.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Build a Gem (custom assistant)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You are my academic writing assistant for a [PhD thesis / journal article] in [field]. Always: use British/American English [choose]; preserve my meaning and technical terms; explain each suggested change; never invent citations, data or quotations; flag any claim that needs a reference.</pre>
+        </div>
+
+        <div class="callout callout-tip">
+          <h3>Tip: ask for uncertainty</h3>
+          <p>Add <em>"If you are unsure, say so"</em> or <em>"Mark anything that should be verified"</em> to your prompts. It won't eliminate errors, but it makes them easier to spot.</p>
+        </div>
+
+        <div class="exercise">
+          <h3>Hands-on exercise 2</h3>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 15 min</p>
+          <ol>
+            <li>Write a one-line "weak" prompt for a task from your current writing.</li>
+            <li>Rewrite it using all five RTCFC elements (2.1), following the weak vs. strong example (2.2).</li>
+            <li>Run both and compare. Then refine the strong version with at least two follow-up prompts (2.3), including "If you are unsure, say so."</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="4">
+            <li>Run the Socratic partner template (2.4) on your own research argument and answer all five questions. Which question exposed the weakest point?</li>
+            <li>Save the prompts that worked best into a personal prompt library (a Google Doc) to reuse after the workshop.</li>
+          </ol>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#module-1">← Module 1: Getting Started</a>
+          <a class="pager-next" href="#module-3">Module 3: Literature &amp; Research →</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 3 ================= -->
+    <section class="page" id="page-module-3" data-page="module-3" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 3</p>
+          <h1>Literature &amp; Research</h1>
+          <p class="lead">Use Gemini to explore ideas, digest reading faster and draft a short literature review from your own sources, while keeping scholarly databases as your source of truth.</p>
+        </header>
+
+        <div class="objectives">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Use Gemini to refine topics, research questions and search strings</li>
+            <li>Explain why Gemini cannot replace Web of Science, Scopus and other subscription databases</li>
+            <li>Ground summaries and comparisons in your own sources with Gemini Notebook</li>
+            <li>Turn a notebook into a short, source-grounded literature review in the Gemini app</li>
+            <li>Apply a verification routine to every source and claim</li>
+          </ul>
+        </div>
+
+        <div class="callout callout-warn">
+          <h3>Golden rule</h3>
+          <p><strong>Find sources in scholarly databases; use Gemini to work with them.</strong> Search Scopus, Web of Science, PubMed, Google Scholar or your library catalogue. Never cite a reference Gemini gives you until you have located and read it yourself.</p>
+        </div>
+
+        <h2>3.1 Refining a topic and research questions</h2>
+        <div class="prompt">
+          <div class="prompt-head"><span>Research question refiner</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>My broad research interest is [topic] in the context of [population/setting]. Suggest five focused, researchable questions. For each, state the likely methodology, one feasibility risk, and how it could contribute to the field. Then ask which direction I want to develop.</pre>
+        </div>
+
+        <h2>3.2 What Gemini can and cannot search</h2>
+        <p>When Gemini "searches", it uses the <strong>open web</strong> through Google Search. It does <strong>not</strong> log in to your library, so it cannot query subscription databases such as <strong>Web of Science</strong>, <strong>Scopus</strong>, PsycINFO, EBSCOhost, ProQuest or IEEE Xplore, and it cannot read paywalled full texts. These platforms sit behind institutional authentication (campus IP, VPN or single sign-on) that only <em>you</em> have. The same applies to Deep Research: its reports draw on publicly reachable web pages.</p>
+
+        <div class="feature-grid">
+          <div class="feature"><h4>No access to indexed databases</h4><p>Gemini cannot run a search in Web of Science or Scopus, apply their field tags (e.g. <code>TS=</code>, <code>TITLE-ABS-KEY</code>) or filters, or export records. Anything it says about "Scopus results" is a guess, not a query.</p></div>
+          <div class="feature"><h4>Abstracts, not full texts</h4><p>For paywalled articles it can usually see only the title, abstract or another page that mentions the paper. A summary may therefore miss the methods, limitations and actual numbers, or misstate them.</p></div>
+          <div class="feature"><h4>Not reproducible</h4><p>The same question can return different sources on different days, and there is no search log. That makes Gemini unsuitable as the search method for systematic or scoping reviews (e.g. PRISMA requires documented, repeatable search strategies).</p></div>
+          <div class="feature"><h4>Indexing and metrics are unreliable</h4><p>Gemini cannot check whether a journal is currently indexed in WoS or Scopus, or its Impact Factor, quartile or CiteScore. JCR and Scopus metrics are subscription data, and indexing status changes. Check the official lists.</p></div>
+          <div class="feature"><h4>Coverage bias</h4><p>Web-visible, open-access, highly cited and English-language work is over-represented. Very recent, regional, non-English and paywalled literature is easily missed, and predatory or low-quality sources can slip in.</p></div>
+          <div class="feature"><h4>Fabricated references</h4><p>Without a database behind it, Gemini may produce plausible but non-existent citations, wrong DOIs or mismatched author–year details (see Module 1, Exercise 1).</p></div>
+        </div>
+
+        <div class="table-wrap wrap">
+          <table>
+            <thead><tr><th>Task</th><th>Web of Science / Scopus (via your library)</th><th>Gemini (chat or Deep Research)</th><th>Gemini Notebook</th></tr></thead>
+            <tbody>
+              <tr><td>Find peer-reviewed literature</td><td>✔ Comprehensive, curated index</td><td>△ Open web only, incomplete</td><td>✘ Uses only sources you add</td></tr>
+              <tr><td>Reproducible Boolean search</td><td>✔ Saved, exportable queries</td><td>✘</td><td>✘</td></tr>
+              <tr><td>Read paywalled full text</td><td>✔ With subscription access</td><td>✘ Abstract or metadata at best</td><td>✔ If <em>you</em> upload the PDF</td></tr>
+              <tr><td>Citation counts, indexing, quartiles</td><td>✔ Authoritative</td><td>✘ Often outdated or invented</td><td>✘</td></tr>
+              <tr><td>Summarise and compare papers</td><td>✘</td><td>△ Risky without the full text</td><td>✔ Grounded, with citations to passages</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">✔ suitable · △ use with caution · ✘ not suitable</p>
+
+        <h2>3.3 Generating search terms</h2>
+        <p>Gemini can't run the database search for you, but it can help you <em>design</em> one that you then run yourself.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Search string builder</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Help me build a Boolean search string for [Web of Science / Scopus] on [research question]. Identify the key concepts, list synonyms and related terms for each, and combine them with AND/OR and truncation (*), using the correct field tags for that database. Explain each choice so I can adjust it. I will run and refine the search myself.</pre>
+        </div>
+
+        <h2>3.4 Grounding your review with Gemini Notebook</h2>
+        <p><strong>Gemini Notebook</strong> (formerly <em>NotebookLM</em>) is Google's source-grounded research tool. Unlike an ordinary chat, a notebook answers <strong>only from the sources you add to it</strong> and links each statement to the passage it came from. Notebooks are also available inside the Gemini app, and they sync between the two. Availability, plan requirements and source limits vary and change, so check what your account offers.</p>
+
+        <div class="two-col">
+          <div class="pro-box">
+            <h3>Why it suits literature work</h3>
+            <ul>
+              <li>Answers are limited to your sources, which greatly reduces invented content</li>
+              <li>Inline citations let you click through to the exact passage and check it</li>
+              <li>Works on the full texts you legally obtained through your library</li>
+              <li>Accepts PDFs, Google Docs and Slides, web pages, YouTube videos and pasted text</li>
+              <li>Can generate briefings, study guides, mind maps and audio overviews of a reading set</li>
+            </ul>
+          </div>
+          <div class="con-box">
+            <h3>What it still can't do</h3>
+            <ul>
+              <li>Find literature for you: it is only as complete as the sources you add</li>
+              <li>Guarantee accuracy: it can still misread tables, figures, equations or scanned PDFs</li>
+              <li>Judge study quality or risk of bias reliably</li>
+              <li>Replace reading: a cited passage may be quoted out of context</li>
+              <li>Override licences: check your library's and publishers' terms before uploading paywalled PDFs, and keep notebooks private</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Recommended workflow</h3>
+        <div class="flow">
+          <div><span>1</span><p><strong>Search</strong> Web of Science, Scopus or discipline databases via your library</p></div>
+          <div><span>2</span><p><strong>Screen</strong> titles and abstracts, and export the records (RIS/BibTeX) to your reference manager</p></div>
+          <div><span>3</span><p><strong>Obtain</strong> full texts through library access or open-access copies</p></div>
+          <div><span>4</span><p><strong>Add</strong> the papers to a Gemini Notebook for one review topic</p></div>
+          <div><span>5</span><p><strong>Ask</strong> grounded questions, then click each citation to verify it</p></div>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Structured paper summary (single source)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Using only [paper title], summarise: (1) research aim, (2) method and sample, (3) key findings with numbers, (4) stated limitations, (5) relevance to my study on [topic]. Cite the passage for each point. If something is not in the paper, write "not reported".</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Cross-source comparison</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Across all sources in this notebook, how is [key concept] defined and measured? Group the sources by approach, cite each one, and point out where they disagree or use incompatible definitions.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Coverage check</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Based only on these sources, which aspects of [research question] are well covered, which are only mentioned briefly, and which are not addressed at all? Do not draw on outside knowledge. I will search the databases for anything missing.</pre>
+        </div>
+
+        <h2>3.5 Building a synthesis matrix</h2>
+        <p>After summarising several papers you have read, ask Gemini to tabulate them so that patterns and gaps become visible:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Study</th><th>Context</th><th>Method</th><th>Key finding</th><th>Limitation</th><th>Theme</th></tr></thead>
+            <tbody>
+              <tr><td>Author A (2022)</td><td>Malaysian SMEs</td><td>Survey, n = 310</td><td>…</td><td>Self-report bias</td><td>Adoption</td></tr>
+              <tr><td>Author B (2023)</td><td>EU manufacturing</td><td>Case study</td><td>…</td><td>Single site</td><td>Barriers</td></tr>
+              <tr><td>Author C (2024)</td><td>Global</td><td>Meta-analysis</td><td>…</td><td>Heterogeneity</td><td>Outcomes</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="prompt">
+          <div class="prompt-head"><span>Gap finder</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Here is my synthesis matrix of [n] studies: [paste]. Identify (a) points of agreement, (b) contradictions, and (c) under-researched contexts, populations or methods. Base your answer only on the matrix and indicate which studies support each point.</pre>
+        </div>
+
+        <h2>3.6 Workflow: from notebook to a short literature review</h2>
+        <p>Once your papers are in a Gemini Notebook, you can turn them into a short, source-grounded literature review: a few paragraphs for an introduction, a proposal or the opening of a thesis chapter. You do the reading, questioning and arguing in the <strong>notebook</strong>, then bring the notebook into the <strong>Gemini app</strong> to draft, and finally check everything yourself.</p>
+
+        <div class="flow flow-6">
+          <div><span>1</span><p><strong>Collect</strong> 5–15 full-text papers from your database search in one notebook (3.2–3.4)</p></div>
+          <div><span>2</span><p><strong>Question</strong> them in the notebook and save the best answers as notes</p></div>
+          <div><span>3</span><p><strong>Decide</strong> your argument: build the synthesis matrix (3.5) and write a 3–5 point outline</p></div>
+          <div><span>4</span><p><strong>Bring</strong> the notebook into the Gemini app: <em>+ → NotebookLM → Add notebook</em></p></div>
+          <div><span>5</span><p><strong>Draft</strong> the review with the prompt below, ideally in Canvas</p></div>
+          <div><span>6</span><p><strong>Verify and revise</strong>: check every citation (3.7), rewrite in your voice (5.5), log it (6.2)</p></div>
+        </div>
+
+        <h3>Step 2: questions to ask in the notebook first</h3>
+        <p>Ask these inside Gemini Notebook, one at a time, and save useful answers as notes. They also show you whether your sources are enough before you write anything.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Notebook question set</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>1. What are the main themes across these sources on [topic]? Group the sources under each theme and cite them.
+2. Where do the sources agree, and where do they contradict each other? Explain possible reasons (context, method, sample).
+3. Which methods, populations and settings are used? Which are missing?
+4. How has thinking on [topic] changed over time across these sources?
+5. Based only on these sources, what questions remain unanswered?</pre>
+        </div>
+
+        <h3>Step 4: bring the notebook into the Gemini app</h3>
+        <div class="attach-mock" aria-label="Illustration of adding a notebook to a chat in the Gemini app">
+          <div class="am-menu" aria-hidden="true">
+            <span>Upload files</span>
+            <span>Add from Drive</span>
+            <span class="am-on">NotebookLM ›  Add notebook</span>
+            <span>Canvas</span>
+          </div>
+          <div class="am-box">
+            <span class="am-plus" aria-hidden="true">+</span>
+            <span class="am-chip"><b class="am-ico">NB</b> Feedback literacy review · 12 sources</span>
+            <span class="am-text">Using only the sources in this notebook, write a short literature review…</span>
+          </div>
+        </div>
+        <p class="note">In the Gemini app, click <strong>+</strong> in the prompt box, choose <strong>NotebookLM</strong> (now Gemini Notebook; the label may differ on your account), then pick your notebook. On Workspace for Education accounts, your administrator must have Gemini Notebook switched on. If you can't see the option, open the notebook in Gemini's <strong>Notebooks</strong> section, or work directly in Gemini Notebook.</p>
+
+        <h3>Step 5: the drafting prompt</h3>
+        <div class="prompt">
+          <div class="prompt-head"><span>Write a short literature review from the attached notebook</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Using ONLY the sources in the attached notebook "[notebook name]", write a short literature review (about [600–800] words) on [topic] for the [introduction / Chapter 2] of my [thesis / article].
+
+Structure it around MY argument:
+- [point 1]
+- [point 2]
+- [point 3]
+
+Requirements:
+1. Synthesise by theme, not one paragraph per paper. For each theme, say where studies agree, where they differ, and why (context, method, sample).
+2. Cite every claim in APA 7 author–year format, using only notebook sources. Do not add outside sources, facts or statistics.
+3. If a point needs evidence that is not in the notebook, write [NEED SOURCE] instead of filling the gap.
+4. End with one paragraph on the gap my study addresses: [your gap in one sentence].
+5. Use British English and a formal, cautious academic tone [or: follow my voice profile: paste it].
+
+After the review, list every source you cited and the claim it supports, so I can check them.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Step 6: follow-up to check the evidence</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>For each citation in the review, quote the exact passage from the notebook source that supports it. Flag any sentence where the support is weak, indirect or missing, and any place where two sources were merged into one claim.</pre>
+        </div>
+
+        <div class="two-col">
+          <div class="pro-box">
+            <h3>Why this workflow works</h3>
+            <ul>
+              <li>The draft is grounded in papers <em>you</em> found and read, not in Gemini's memory</li>
+              <li>Your outline sets the argument; Gemini only organises and connects the evidence</li>
+              <li>[NEED SOURCE] markers show you exactly where your reading is thin</li>
+              <li>The follow-up prompt makes every citation quick to check</li>
+            </ul>
+          </div>
+          <div class="con-box">
+            <h3>Still your job</h3>
+            <ul>
+              <li>Check each citation against the paper itself (3.7): grounded answers can still misattribute</li>
+              <li>Build the reference list in your reference manager (Zotero, Mendeley, EndNote), not from Gemini</li>
+              <li>Rewrite the draft substantially in your own voice (5.5); it is a starting point</li>
+              <li>Confirm your assessment's UM AI level allows this (Level 3) and declare it (6.2)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout callout-tip">
+          <h3>Keep it short, and go theme by theme</h3>
+          <p>This works best for reviews of up to about 1,000 words. For a full literature review chapter, run the drafting prompt once per theme from your outline, check each part, then join and rewrite them yourself. Long single requests are where sources get blurred together.</p>
+        </div>
+
+        <h2>3.7 The verification routine</h2>
+        <ol class="steps">
+          <li><strong>Exists?</strong> Find the source in a database or via its DOI at <a href="https://doi.org" target="_blank" rel="noopener">doi.org</a>.</li>
+          <li><strong>Accurate?</strong> Check the authors, year, title and journal against the publisher's page.</li>
+          <li><strong>Supports the claim?</strong> Read the relevant section yourself. Summaries can distort findings.</li>
+          <li><strong>Still valid?</strong> Check for retractions or corrections, for example via the Retraction Watch database.</li>
+        </ol>
+
+        <div class="exercise">
+          <h3>Hands-on exercise 3</h3>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 25 min</p>
+          <ol>
+            <li>Ask Gemini (without a notebook): <em>"What are the five most-cited Web of Science articles on [your topic] since 2020?"</em> Then run a real search in Web of Science or Scopus and sort by citations. Compare the two lists (3.2).</li>
+            <li>Download three full-text papers through your library and add them to a new Gemini Notebook. Run the cross-source comparison prompt (3.4).</li>
+            <li>Click through at least five citations in the answer. Did each passage really support the statement? Record any errors or omissions you find.</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="4">
+            <li>Use the research question refiner (3.1) on your topic and choose the question you would actually pursue.</li>
+            <li>Use the search-string prompt (3.3) for your topic and run the string in Web of Science or Scopus yourself.</li>
+            <li>Ask the notebook to build a synthesis matrix of the three papers (3.5), then run the gap finder prompt on it.</li>
+            <li>Apply the four-step verification routine (3.7) to one paper: does it exist, is the metadata accurate, does it support your claim, and has it been retracted or corrected?</li>
+                      <li>Run the notebook question set (3.6) on your notebook, write a 3-point outline of your argument, then bring the notebook into the Gemini app and draft a 300–400 word review of one theme with the drafting prompt. Use the follow-up prompt to check every citation, and count the [NEED SOURCE] markers: what should you read next?</li>
+          </ol>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#module-2">← Module 2: Prompting Essentials</a>
+          <a class="pager-next" href="#module-4">Module 4: Drafting &amp; Structure →</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 4 ================= -->
+    <section class="page" id="page-module-4" data-page="module-4" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 4</p>
+          <h1>Drafting &amp; Structure</h1>
+          <p class="lead">Move from ideas to a well-organised draft, using Gemini (including Gems, Canvas and Nano Banana diagrams) as a scaffold while the argument and words stay yours.</p>
+        </header>
+
+        <div class="objectives">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Generate and critique outlines for papers and chapters</li>
+            <li>Strengthen paragraph structure and logical flow</li>
+            <li>Draft and refine abstracts and introductions with AI feedback</li>
+            <li>Build Gems as reusable drafting assistants and use Canvas for quick drafting and documentation</li>
+            <li>Create research diagrams with Nano Banana responsibly, and build editable figures as draw.io code in Canvas</li>
+          </ul>
+        </div>
+
+        <h2>4.1 The "you write, it scaffolds" approach</h2>
+        <div class="flow">
+          <div><span>1</span><p><strong>You</strong> state your argument and key evidence in rough notes</p></div>
+          <div><span>2</span><p><strong>Gemini</strong> proposes an outline and points out gaps</p></div>
+          <div><span>3</span><p><strong>You</strong> write the draft in your own words</p></div>
+          <div><span>4</span><p><strong>Gemini</strong> critiques structure, logic and clarity</p></div>
+          <div><span>5</span><p><strong>You</strong> decide which suggestions to accept, and revise</p></div>
+        </div>
+
+        <h2>4.2 Outlining</h2>
+        <div class="prompt">
+          <div class="prompt-head"><span>Paper outline</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>I'm writing a [type: empirical article / review / thesis chapter] for [journal or audience]. My main argument: [1–2 sentences]. My key evidence: [bullets]. Propose an IMRaD-style outline with section headings, the purpose of each section, and the evidence that belongs there. Flag where my argument currently lacks support.</pre>
+        </div>
+
+        <h2>4.3 Paragraph structure</h2>
+        <p>Strong academic paragraphs often follow a <strong>claim → evidence → analysis → link</strong> pattern.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Paragraph diagnostic</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Analyse the paragraph below. Identify its topic sentence, the evidence, the analysis and the link to the next idea. Tell me which element is weak or missing and why. Do not rewrite the paragraph.
+
+[paste paragraph]</pre>
+        </div>
+
+        <h2>4.4 Abstracts</h2>
+        <div class="prompt">
+          <div class="prompt-head"><span>Abstract checker</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Here is my draft abstract for [journal], with a limit of [n] words. Check whether it clearly states background, aim, method, key results (with figures) and implication. Score each element out of 5, explain your scores, and suggest specific improvements. Keep my findings exactly as written.
+
+[paste abstract]</pre>
+        </div>
+
+        <h2>4.5 Introductions: the CARS model</h2>
+        <p>Swales' "Create a Research Space" model is a useful lens for critiquing an introduction:</p>
+        <ol class="steps">
+          <li><strong>Establish a territory:</strong> why the topic matters</li>
+          <li><strong>Establish a niche:</strong> the gap, problem or question</li>
+          <li><strong>Occupy the niche:</strong> your aims, approach and contribution</li>
+        </ol>
+        <div class="prompt">
+          <div class="prompt-head"><span>CARS critique</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Map my introduction below onto Swales' CARS model (territory, niche, occupation). Quote the sentences that serve each move. Identify any move that is weak or missing, and suggest what content (not wording) I should add.
+
+[paste introduction]</pre>
+        </div>
+
+        <h2>4.6 Gems: reusable assistants for drafting</h2>
+        <p>A <strong>Gem</strong> is a saved Gemini assistant with your standing instructions, so you don't have to retype the same long prompt every session. Gems are available on all plans, including Free. Create one under <strong>Gems → New Gem</strong> (the left sidebar on the web).</p>
+
+        <div class="gem-mock" aria-label="Illustration of the Gem builder">
+          <div class="gem-mock-head"><span class="gem-dot" aria-hidden="true"></span>New Gem</div>
+          <dl class="gem-fields">
+            <div><dt>Name</dt><dd>Thesis Structure Coach</dd></div>
+            <div><dt>Instructions</dt><dd>The role, rules and output format: what the Gem must always and never do.</dd></div>
+            <div><dt>Knowledge</dt><dd><span class="file-chip">Thesis_Guidelines_2026.pdf</span><span class="file-chip">Chapter2_draft.docx</span><small>Up to 10 files, including from Google Drive</small></dd></div>
+            <div><dt>Default tool</dt><dd><span class="file-chip tool">Canvas</span><small>Optional: open every session in a specific tool</small></dd></div>
+          </dl>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature"><h4>Consistency</h4><p>The same rules every time: your citation style, British or American spelling, "never invent references", "ask before rewriting".</p></div>
+          <div class="feature"><h4>Context that sticks</h4><p>Knowledge files such as your faculty's thesis guidelines or a journal's author instructions are applied without you re-uploading them.</p></div>
+          <div class="feature"><h4>Shareable</h4><p>Share a Gem by link (view or edit), for example a supervisor's feedback checklist for the whole research group.</p></div>
+        </div>
+
+        <p>Three Gems that work well for academic drafting and documentation (paste into the <strong>Instructions</strong> box):</p>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Gem: Thesis Structure Coach</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You are a thesis structure coach for a [Master's / PhD] student in [field]. Use the attached thesis guidelines as the authority on structure and formatting.
+When I share notes or a draft: (1) map it against the required chapter structure, (2) list missing or misplaced elements, (3) ask up to three questions that would strengthen the argument.
+Never write full paragraphs for me. Never invent references, data or quotations. Use [British/American] English.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Gem: Methods &amp; Documentation Assistant</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You turn my rough lab notes, field notes or analysis logs into clear, structured documentation.
+For every input: organise it under the headings Aim, Materials/Data, Procedure, Analysis, Software and versions, and Deviations. Write in past tense and passive or "we" voice as I specify.
+Flag with [MISSING] any detail a reviewer would need to replicate the work (sample sizes, parameters, versions, dates, ethics approval numbers). Do not fill gaps with guesses.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Gem: Journal Formatting Checker</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You check manuscripts against the attached author guidelines for [journal]. Report, as a table: requirement | where my draft meets or misses it | suggested fix.
+Check word limits, section order, abstract structure, heading levels, reference style and declarations (funding, conflicts of interest, AI use, data availability). Do not change my wording.</pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <h3>Gems follow your account's privacy rules</h3>
+          <p>Knowledge files you attach are handled under the same terms as your chats (see 1.4). On a personal Free, AI Plus or AI Pro account, don't attach unpublished data, participant information or other people's manuscripts. Build research Gems in your <strong>Workspace for Education</strong> account. When you share a Gem, check what its instructions and files reveal before sending the link.</p>
+        </div>
+
+        <h2>4.7 Canvas: draft and edit side by side</h2>
+        <p><strong>Canvas</strong> opens a document editor next to the chat. Instead of copying text back and forth, you and Gemini work on the same document: highlight any passage and ask for a change, adjust length or tone with one click, and export the result to Google Docs. Turn it on by choosing <strong>Canvas</strong> from the tools menu in the prompt box (or set it as a Gem's default tool).</p>
+
+        <div class="canvas-mock" aria-label="Illustration of Canvas: chat on the left, document on the right with a highlighted passage and an edit menu">
+          <div class="cm-chat">
+            <span class="cm-label">Chat</span>
+            <div class="cm-bubble cm-user">Draft a data management plan section from my notes below. Use the funder's headings.</div>
+            <div class="cm-bubble cm-ai">I've drafted it in Canvas, and flagged two items you need to confirm.</div>
+            <div class="cm-bubble cm-user">Make the highlighted part more concise.</div>
+          </div>
+          <div class="cm-doc">
+            <div class="cm-toolbar"><span>Data Management Plan</span><span class="cm-tools"><span>Length</span><span>Tone</span><span>Export to Docs ↗</span></span></div>
+            <h5>2. Data storage and backup</h5>
+            <p>Interview recordings will be stored on the university's managed cloud storage. <mark class="cm-hl">All files will be backed up automatically on a daily basis to a secondary location in accordance with institutional policy, ensuring that no data is lost in the event of hardware failure.</mark></p>
+            <div class="cm-popup" aria-hidden="true"><span>Ask Gemini</span><span>Shorter</span><span>More formal</span><span>Explain</span></div>
+            <p>Transcripts will be de-identified before analysis <span class="cm-flag">[MISSING: ethics approval no.]</span></p>
+          </div>
+        </div>
+
+        <h3>Quick documentation tasks that suit Canvas</h3>
+        <div class="feature-grid">
+          <div class="feature"><h4>Research admin</h4><p>Data management plans, ethics application sections, progress reports, conference travel justifications.</p></div>
+          <div class="feature"><h4>Records</h4><p>Supervision meeting minutes, lab protocols and SOPs, decision logs for your methodology chapter.</p></div>
+          <div class="feature"><h4>Data, code and diagram docs</h4><p>README files, codebooks and variable dictionaries. Canvas also writes code, including draw.io diagram code (see 4.8).</p></div>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Canvas: meeting notes to minutes</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>In Canvas, turn my rough supervision meeting notes below into formal minutes with these headings: Attendees, Date, Decisions, Action items (owner, deadline), Next meeting. Keep every decision exactly as written; don't add anything that isn't in my notes. Mark anything unclear as [CHECK].
+
+[paste notes]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Canvas: dataset README</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>In Canvas, draft a README for my research dataset using this information: [project title, collection dates, instruments, file list, variables, licence]. Include sections for Overview, File structure, Variables (as a table), Methods summary, Licence and How to cite. Mark any section where you lack information as [TO COMPLETE].</pre>
+        </div>
+
+        <h3>A four-step Canvas routine</h3>
+        <ol class="steps">
+          <li><strong>Draft:</strong> generate the skeleton in Canvas from <em>your</em> notes.</li>
+          <li><strong>Refine:</strong> highlight passages and ask for targeted changes, never "rewrite everything".</li>
+          <li><strong>Complete:</strong> fill every [MISSING], [CHECK] and [TO COMPLETE] marker yourself.</li>
+          <li><strong>Export:</strong> send it to Google Docs, where version history keeps a record of what was AI-drafted and what you changed. This is useful when you write your AI-use disclosure (Module 6).</li>
+        </ol>
+
+        <div class="callout callout-tip">
+          <h3>Gems + Canvas = a reusable drafting workspace</h3>
+          <p>Set your <em>Methods &amp; Documentation Assistant</em> Gem's default tool to Canvas. Every time you open it, you get a document ready to fill, with your rules already applied.</p>
+        </div>
+
+        <h2>4.8 Research diagrams with Nano Banana</h2>
+        <p><strong>Nano Banana</strong> is the nickname for Gemini's image-generation models. Besides pictures, they can produce <strong>diagrams with readable labels</strong>: conceptual frameworks, research-design flowcharts and process overviews. You can also turn a photo of a whiteboard sketch into a clean draft. Choose <strong>Create image</strong> from the tools menu in the prompt box, or simply ask for a diagram.</p>
+
+        <div class="feature-grid">
+          <div class="feature"><h4>Nano Banana 2</h4><p>Gemini 3.1 Flash Image: fast, good for quick drafts and iterations.</p></div>
+          <div class="feature"><h4>Nano Banana Pro</h4><p>Gemini 3 Pro Image: the best choice for diagrams. It renders long, accurate labels and handles complex layouts, multiple languages and high resolution.</p></div>
+          <div class="feature"><h4>Plans and limits</h4><p>Image generation is available on all plans, with daily limits and access to the Pro model rising on paid and Workspace plans (see 1.4).</p></div>
+        </div>
+
+        <h3>Where AI-generated diagrams fit</h3>
+        <div class="traffic">
+          <div class="tl-green">
+            <h3>Good uses</h3>
+            <ul>
+              <li>Brainstorming and refining a conceptual framework</li>
+              <li>Slides for seminars, proposal defences and supervision meetings</li>
+              <li>Conference posters and teaching materials</li>
+              <li>Cleaning up a hand-drawn sketch into a draft</li>
+            </ul>
+          </div>
+          <div class="tl-amber">
+            <h3>Check rules and disclose</h3>
+            <ul>
+              <li>Thesis figures: check your faculty's guidelines</li>
+              <li>Graphical or visual abstracts</li>
+              <li>Figures in grant proposals and reports</li>
+              <li>Anything shared publicly under your name</li>
+            </ul>
+          </div>
+          <div class="tl-red">
+            <h3>Do not use</h3>
+            <ul>
+              <li>Data figures: charts and plots must come from your real data</li>
+              <li>Experimental images (microscopy, gels, scans, photos)</li>
+              <li>Journal figures where the publisher prohibits AI images (e.g. Elsevier)</li>
+              <li>Diagrams of results you have not verified</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Anatomy of a good diagram prompt</h3>
+        <p>Image models follow layout instructions literally, so spell out every element. Each colour below is one part of the prompt:</p>
+        <div class="dp-demo">
+          <p class="dp-text"><span class="dp dp1">Create a clean conceptual framework diagram</span> <span class="dp dp2">with five boxes: "Perceived usefulness", "Perceived ease of use" and "Institutional support" on the left; "Attitude toward AI" in the centre; "Intention to use AI in academic writing" on the right.</span> <span class="dp dp3">Solid arrows from each left box to the centre box, and from the centre box to the right box. A dashed arrow from an oval labelled "AI literacy" pointing at the centre-to-right arrow.</span> <span class="dp dp4">Left-to-right layout, 16:9, white background.</span> <span class="dp dp5">Flat academic style, navy and grey, sans-serif labels, no icons, no decoration.</span> <span class="dp dp6">Use exactly these labels, spelled exactly as written. Add no other text.</span></p>
+          <ul class="dp-legend">
+            <li><span class="dp dp1">Diagram type</span></li>
+            <li><span class="dp dp2">Elements and exact labels</span></li>
+            <li><span class="dp dp3">Relationships (arrows)</span></li>
+            <li><span class="dp dp4">Layout and size</span></li>
+            <li><span class="dp dp5">Visual style</span></li>
+            <li><span class="dp dp6">Constraints</span></li>
+          </ul>
+        </div>
+
+        <figure class="fw-figure">
+          <div class="fw-scroll">
+          <svg viewBox="0 0 760 300" role="img" aria-labelledby="fw-title">
+            <title id="fw-title">Example conceptual framework: three factors lead to attitude toward AI, which leads to intention to use AI in academic writing, moderated by AI literacy</title>
+            <defs>
+              <marker id="fw-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="fw-head"/></marker>
+            </defs>
+            <g class="fw-box"><rect x="20" y="30" width="190" height="56" rx="8"/><text x="115" y="63">Perceived usefulness</text></g>
+            <g class="fw-box"><rect x="20" y="122" width="190" height="56" rx="8"/><text x="115" y="155">Perceived ease of use</text></g>
+            <g class="fw-box"><rect x="20" y="214" width="190" height="56" rx="8"/><text x="115" y="247">Institutional support</text></g>
+            <g class="fw-box fw-mid"><rect x="300" y="122" width="170" height="56" rx="8"/><text x="385" y="155">Attitude toward AI</text></g>
+            <g class="fw-box fw-out"><rect x="560" y="112" width="180" height="76" rx="8"/><text x="650" y="145">Intention to use AI</text><text x="650" y="167">in academic writing</text></g>
+            <g class="fw-mod"><ellipse cx="515" cy="40" rx="62" ry="24"/><text x="515" y="45">AI literacy</text></g>
+            <path class="fw-line" d="M210,58 L300,140" marker-end="url(#fw-arrow)"/>
+            <path class="fw-line" d="M210,150 L300,150" marker-end="url(#fw-arrow)"/>
+            <path class="fw-line" d="M210,242 L300,160" marker-end="url(#fw-arrow)"/>
+            <path class="fw-line" d="M470,150 L560,150" marker-end="url(#fw-arrow)"/>
+            <path class="fw-line fw-dash" d="M515,64 L515,146" marker-end="url(#fw-arrow)"/>
+          </svg>
+          </div>
+          <figcaption>The target result for the prompt above, drawn by hand for this workshop as a reference. Compare Gemini's output against it: same boxes, same arrows, exact labels.</figcaption>
+        </figure>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Research design flowchart</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Create a clean vertical flowchart of my research design with these stages, in order: [Stage 1: ...], [Stage 2: ...], [Stage 3: ...], [Stage 4: ...]. Show [Phase A] and [Phase B] as two shaded groups. Use rounded boxes, one-way arrows, a white background and a flat academic style with sans-serif labels. Use exactly these labels and add no other text or numbers.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Sketch to clean diagram (attach a photo)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Redraw the attached hand-drawn sketch as a clean, professional diagram. Keep exactly the same boxes, labels and arrows. Do not add, remove or rename anything. If a label is unreadable, write [?] instead of guessing. White background, flat academic style.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Targeted edits (follow-up in the same chat)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Keep everything else identical, but: (1) change the arrow from "[A]" so it points to "[B]", (2) rename "[old label]" to "[new label]", (3) translate all labels into Bahasa Melayu for my presentation version.</pre>
+        </div>
+
+        <div class="callout callout-tip">
+          <h3>Need an editable, publication-quality figure? Ask for code instead</h3>
+          <p>Generated images are flat pictures: you can't fix one typo or move one arrow. For figures you'll keep editing, ask Gemini in <strong>Canvas</strong> to write the diagram as <strong>draw.io</strong>, <strong>Mermaid</strong> or <strong>Graphviz</strong> code. You get exact text and vector output that you control completely. For charts of your data, ask it for <strong>Python, R or Excel</strong> steps that plot your real data file.</p>
+        </div>
+
+        <h3>Worked example: a draw.io diagram from Canvas</h3>
+        <p><a href="https://app.diagrams.net" target="_blank" rel="noopener">draw.io</a> (also called diagrams.net) is a free diagram editor that runs in your browser and saves to Google Drive. Behind the scenes, every draw.io diagram is saved as text code, so Gemini can write that code for you from a plain description. You paste it into draw.io, and then you can move and edit every box, label and arrow with your mouse.</p>
+
+        <div class="flow flow-4">
+          <div><span>1</span><p><strong>Describe</strong> your diagram in plain words to Gemini in Canvas</p></div>
+          <div><span>2</span><p><strong>Copy</strong> the code Canvas gives you; no need to read it</p></div>
+          <div><span>3</span><p><strong>Paste</strong> it into draw.io: <em>Extras → Edit Diagram</em>, paste, click <em>OK</em></p></div>
+          <div><span>4</span><p><strong>Edit and export</strong>: adjust the layout, then <em>File → Export as → SVG or PNG</em></p></div>
+        </div>
+
+        <p>You don't need to know any code. Describe your diagram in everyday words, the way you would explain it to a colleague. Copy the prompt below, open <strong>Canvas</strong> in Gemini, and replace the example boxes and arrows with your own.</p>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Step 1: describe your diagram in plain words (Canvas)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>I want to make a diagram in draw.io (also called diagrams.net), but I'm not technical. Please create it for me as draw.io code that I can copy and paste.
+
+What the diagram is: the conceptual framework for my study.
+
+Boxes (use these words exactly):
+- On the left, stacked: "Perceived usefulness", "Perceived ease of use", "Institutional support"
+- In the middle: "Attitude toward AI" (light blue)
+- On the right: "Intention to use AI in academic writing" (light green)
+- Above, in a dashed yellow oval: "AI literacy"
+
+Arrows:
+- Each box on the left points to the middle box
+- The middle box points to the box on the right
+- "AI literacy" has a dashed arrow pointing at the arrow between the middle and right boxes
+
+Look: left to right, neatly spaced, simple academic style, no extra text or titles.
+
+Please give me ONE code block only, starting with &lt;mxfile&gt; and ending with &lt;/mxfile&gt;, so I can copy it in one go. After the code, tell me in 3 short steps how to open it in draw.io.</pre>
+        </div>
+
+        <h4 class="cr-title">Step 2: what Canvas gives you back</h4>
+        <div class="canvas-reply">
+          <div class="cr-head"><span class="cr-dot" aria-hidden="true"></span>Gemini · Canvas</div>
+          <p>Here is your conceptual framework as draw.io code. Copy the whole block below, from <code>&lt;mxfile&gt;</code> to <code>&lt;/mxfile&gt;</code>.</p>
+          <div class="prompt">
+            <div class="prompt-head"><span>draw.io code (copy all of it)</span><button class="copy-btn" type="button">Copy</button></div>
+            <pre class="code-xml">&lt;mxfile&gt;
+  &lt;diagram name=&quot;Conceptual framework&quot;&gt;
+    &lt;mxGraphModel dx=&quot;800&quot; dy=&quot;400&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; page=&quot;1&quot; pageWidth=&quot;827&quot; pageHeight=&quot;300&quot;&gt;
+      &lt;root&gt;
+        &lt;mxCell id=&quot;0&quot;/&gt;
+        &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot;/&gt;
+        &lt;mxCell id=&quot;pu&quot; value=&quot;Perceived usefulness&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;40&quot; y=&quot;40&quot; width=&quot;180&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;peou&quot; value=&quot;Perceived ease of use&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;40&quot; y=&quot;130&quot; width=&quot;180&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;is&quot; value=&quot;Institutional support&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;40&quot; y=&quot;220&quot; width=&quot;180&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;att&quot; value=&quot;Attitude toward AI&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;320&quot; y=&quot;130&quot; width=&quot;170&quot; height=&quot;50&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;int&quot; value=&quot;Intention to use AI in academic writing&quot; style=&quot;rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;580&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;70&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;lit&quot; value=&quot;AI literacy&quot; style=&quot;ellipse;whiteSpace=wrap;html=1;dashed=1;fillColor=#fff2cc;strokeColor=#d6b656;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;
+          &lt;mxGeometry x=&quot;475&quot; y=&quot;20&quot; width=&quot;120&quot; height=&quot;45&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e1&quot; style=&quot;endArrow=block;html=1;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;pu&quot; target=&quot;att&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e2&quot; style=&quot;endArrow=block;html=1;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;peou&quot; target=&quot;att&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e3&quot; style=&quot;endArrow=block;html=1;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;is&quot; target=&quot;att&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e4&quot; style=&quot;endArrow=block;html=1;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;att&quot; target=&quot;int&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;/&gt;
+        &lt;/mxCell&gt;
+        &lt;mxCell id=&quot;e5&quot; style=&quot;endArrow=block;dashed=1;html=1;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;lit&quot;&gt;
+          &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot;&gt;
+            &lt;mxPoint x=&quot;535&quot; y=&quot;155&quot; as=&quot;targetPoint&quot;/&gt;
+          &lt;/mxGeometry&gt;
+        &lt;/mxCell&gt;
+      &lt;/root&gt;
+    &lt;/mxGraphModel&gt;
+  &lt;/diagram&gt;
+&lt;/mxfile&gt;</pre>
+          </div>
+          <p><strong>How to open it in draw.io:</strong></p>
+          <ol class="cr-steps">
+            <li>Go to <strong>app.diagrams.net</strong>, choose where to save (Google Drive or your device), then click <strong>Create New Diagram → Blank Diagram</strong>.</li>
+            <li>Open the <strong>Extras</strong> menu → <strong>Edit Diagram</strong>. Delete the code already in the box, paste the code above, and click <strong>OK</strong>.</li>
+            <li>Your diagram appears. Drag boxes to adjust it, then use <strong>File → Export as → PNG</strong> (or SVG) for your thesis or slides.</li>
+          </ol>
+          <p class="cr-note">You don't need to read or understand the code. You only copy it.</p>
+        </div>
+
+        <figure class="drawio-result">
+          <img src="img/drawio-framework.png" alt="The diagram produced by the XML above, rendered in draw.io: three boxes on the left with arrows to 'Attitude toward AI', an arrow to 'Intention to use AI in academic writing', and a dashed 'AI literacy' ellipse moderating that arrow" width="920" height="335">
+          <figcaption>What you see in draw.io after pasting the code: a normal diagram you can now edit, restyle or move by hand. <a href="img/conceptual-framework.drawio" download>Download this example (.drawio)</a></figcaption>
+        </figure>
+
+        <div class="feature-grid">
+          <div class="feature"><h4>If draw.io shows an error</h4><p>Paste the error message back into Canvas: "draw.io says: [error]. Fix the XML." Malformed XML is the most common problem and is usually fixed in one round.</p></div>
+          <div class="feature"><h4>If the layout is messy</h4><p>Don't keep re-prompting. Select everything in draw.io and use <em>Arrange → Layout</em>, or drag the boxes yourself. It is your figure now.</p></div>
+          <div class="feature"><h4>Keep the source</h4><p>Save the <em>.drawio</em> file in Google Drive with your thesis files, so you or your supervisor can edit the figure later without AI.</p></div>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Alternative: Mermaid code (quick flowcharts)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>In Canvas, write Mermaid flowchart code (left to right) for my conceptual framework: [list of constructs] with these relationships: [A → B, B → C, D moderates B → C]. Use exactly my labels. Then explain how to export it as SVG or PNG.</pre>
+        </div>
+        <p class="note">A figure you build and edit from code is your own drawing, but Gemini still helped create it. Record it in your AI-use log and disclose it if your faculty or journal requires (see 6.2).</p>
+
+        <h3>Before you use an AI diagram</h3>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> Every label is spelled correctly and matches the terms in my text</label></li>
+          <li><label><input type="checkbox"> Every arrow matches my theory or method, and nothing extra was added</label></li>
+          <li><label><input type="checkbox"> It contains no numbers, data or results that I have not verified</label></li>
+          <li><label><input type="checkbox"> I have checked the rules of my faculty, conference or journal for AI-generated images</label></li>
+          <li><label><input type="checkbox"> I have added a disclosure in the caption or acknowledgements</label></li>
+        </ul>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Sample figure caption disclosure</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Figure 2. Conceptual framework of the study. Diagram drafted with Google Gemini (Nano Banana Pro) from the author's sketch and verified and edited by the author.</pre>
+        </div>
+        <p class="note">Images made with Gemini carry an invisible SynthID watermark that identifies them as AI-generated, and some plans also add a visible watermark. Don't try to remove either. Disclose instead.</p>
+
+        <div class="callout callout-tip">
+          <h3>Keep your voice</h3>
+          <p>Ask Gemini for <em>feedback and questions</em> rather than rewritten text. You'll learn more, your style stays consistent, and authorship stays clearly yours.</p>
+        </div>
+
+        <div class="exercise">
+          <h3>Hands-on exercise 4</h3>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 25 min</p>
+          <ol>
+            <li>Choose one paragraph from your own draft and run the paragraph diagnostic (4.3). Alternatively, run the abstract checker (4.4) on your abstract or the CARS critique (4.5) on your introduction.</li>
+            <li>Revise the paragraph yourself, then compare before and after with a partner.</li>
+            <li>Create a Gem from one of the 4.6 templates. Add one knowledge file (e.g. your faculty's thesis guidelines) and set its default tool to Canvas.</li>
+            <li>In that Gem, turn the notes from your last supervision meeting (or a lab session) into a structured document. Highlight one passage and ask Canvas (4.7) to make it more concise, then export to Google Docs and resolve every [MISSING] marker yourself.</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="5">
+            <li>Write your current paper's main argument in two sentences and generate an outline (4.1, 4.2).</li>
+            <li>Sketch your study's conceptual framework or research design on paper. Photograph it and use the "sketch to clean diagram" prompt with Nano Banana. Run the "Before you use an AI diagram" checklist. Then rebuild the same diagram as draw.io code in Canvas (the worked example in 4.8), open it in draw.io and fix it by hand. Which version would you put in your thesis, and why?</li>
+          </ol>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#module-3">← Module 3: Literature &amp; Research</a>
+          <a class="pager-next" href="#module-5">Module 5: Editing &amp; Language →</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 5 ================= -->
+    <section class="page" id="page-module-5" data-page="module-5" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 5</p>
+          <h1>Editing &amp; Language</h1>
+          <p class="lead">Polish clarity, concision and tone, get reviewer-style feedback before you submit, make sure the writing still sounds like you, and fix output that isn't what you expected.</p>
+        </header>
+
+        <div class="objectives">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Use targeted prompts for grammar, clarity and concision</li>
+            <li>Adjust register and tone for academic audiences</li>
+            <li>Simulate peer review to anticipate criticism</li>
+            <li>Build a voice profile from your own writing and use it to produce drafts that sound like you</li>
+            <li>Diagnose and fix output that isn't what you expected</li>
+          </ul>
+        </div>
+
+        <h2>5.1 Layered editing</h2>
+        <p>Edit in passes, from big-picture to fine detail. One focus per prompt gives better results than "fix everything".</p>
+        <div class="layers">
+          <div><h4>Pass 1: Logic</h4><p>Does the argument flow? Are claims supported?</p></div>
+          <div><h4>Pass 2: Clarity</h4><p>Long sentences, ambiguity, jargon</p></div>
+          <div><h4>Pass 3: Concision</h4><p>Redundancy, wordiness, filler</p></div>
+          <div><h4>Pass 4: Mechanics</h4><p>Grammar, punctuation, consistency</p></div>
+        </div>
+
+        <h2>5.2 Editing prompts</h2>
+        <div class="prompt">
+          <div class="prompt-head"><span>Track-changes style edit</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Proofread the text below for grammar, spelling and punctuation only. Do not change meaning, terminology or style. Present your changes in a table: original | revised | reason.
+
+[paste text]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Concision</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Reduce the following text by about 20% without losing any argument, data or citation. Show the shortened version, then list what you removed and why.
+
+[paste text]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Academic register</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Identify informal phrases, overstated claims and unhedged generalisations in the text below. For each, suggest a more precise academic alternative and explain the difference.
+
+[paste text]</pre>
+        </div>
+
+        <h2>5.3 Simulated peer review</h2>
+        <div class="prompt">
+          <div class="prompt-head"><span>Reviewer 2</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Act as a rigorous but fair peer reviewer for [journal]. Review the manuscript section below. Give: (1) a summary of its contribution, (2) major concerns, (3) minor concerns, and (4) questions for the authors. Be specific and refer to sentences directly.
+
+[paste section]</pre>
+        </div>
+        <p class="note">Only paste your <strong>own</strong> unpublished work. Never upload a manuscript you are reviewing for a journal. That breaches confidentiality (see Module 6).</p>
+
+        <h2>5.4 Paraphrasing: handle with care</h2>
+        <div class="two-col">
+          <div class="pro-box">
+            <h3>Acceptable</h3>
+            <ul>
+              <li>Asking Gemini to explain a difficult passage so <em>you</em> can paraphrase it</li>
+              <li>Checking whether your paraphrase is too close to the original</li>
+              <li>Improving the clarity of sentences you wrote</li>
+            </ul>
+          </div>
+          <div class="con-box">
+            <h3>Not acceptable</h3>
+            <ul>
+              <li>"Spinning" someone else's text to avoid plagiarism detection</li>
+              <li>Paraphrasing without citing the original source</li>
+              <li>Passing off AI-generated text as your own original writing</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>5.5 Writing in your own voice</h2>
+        <p>Left to its defaults, Gemini writes in a generic "AI register": long, evenly balanced sentences, stock phrases ("delve into", "pivotal role", "in today's rapidly evolving landscape") and confident claims with few hedges. Examiners and reviewers notice, and it doesn't sound like <em>you</em>. You can fix this by giving Gemini a <strong>voice profile</strong>: a description of how you write, drawn from your own past writing.</p>
+
+        <h3>Your voice fingerprint</h3>
+        <p>A voice profile records measurable features of your style, not your content. Here is an example profile for a researcher in education:</p>
+
+        <div class="voice-card">
+          <div class="voice-head">
+            <span class="voice-avatar" aria-hidden="true">A</span>
+            <div><strong>Voice profile: "Aisyah, PhD, Education"</strong><small>Built from 3 samples · 1,450 words · Malaysian academic English</small></div>
+          </div>
+          <ul class="voice-scales">
+            <li><span class="vs-label">Sentence length</span><span class="vs-ends">Short</span><span class="vs-track"><span class="vs-dot" style="left: 38%"></span></span><span class="vs-ends">Long</span><span class="vs-val">avg. 19 words</span></li>
+            <li><span class="vs-label">Formality</span><span class="vs-ends">Plain</span><span class="vs-track"><span class="vs-dot" style="left: 72%"></span></span><span class="vs-ends">Formal</span><span class="vs-val">formal, not ornate</span></li>
+            <li><span class="vs-label">Hedging</span><span class="vs-ends">Direct</span><span class="vs-track"><span class="vs-dot" style="left: 60%"></span></span><span class="vs-ends">Cautious</span><span class="vs-val">"suggests", "may"</span></li>
+            <li><span class="vs-label">Voice</span><span class="vs-ends">Passive</span><span class="vs-track"><span class="vs-dot" style="left: 65%"></span></span><span class="vs-ends">"We"</span><span class="vs-val">mostly active "we"</span></li>
+            <li><span class="vs-label">Evidence density</span><span class="vs-ends">Low</span><span class="vs-track"><span class="vs-dot" style="left: 80%"></span></span><span class="vs-ends">High</span><span class="vs-val">citation every 2–3 sentences</span></li>
+          </ul>
+          <div class="voice-tags">
+            <span class="vt vt-keep">British spelling</span>
+            <span class="vt vt-keep">Opens paragraphs with a claim</span>
+            <span class="vt vt-keep">"Taken together, …" to synthesise</span>
+            <span class="vt vt-keep">Keeps local terms (e.g. "sekolah kebangsaan")</span>
+            <span class="vt vt-avoid">Never: "delve", "pivotal", "tapestry", "landscape"</span>
+            <span class="vt vt-avoid">No rhetorical questions</span>
+          </div>
+        </div>
+
+        <h3>Generic vs. personalised: the same notes, two drafts</h3>
+        <div class="voice-compare">
+          <div class="vc-generic">
+            <span class="vc-label">Generic AI draft</span>
+            <p><span class="rk red">In today's rapidly evolving educational landscape</span>, artificial intelligence <span class="rk red">plays a pivotal role</span> in transforming how students write. This study <span class="rk red">delves into</span> the <span class="rk red">multifaceted</span> ways in which AI tools <span class="rk amber">revolutionise</span> academic writing, offering <span class="rk red">invaluable insights</span> for educators.</p>
+          </div>
+          <div class="vc-voice">
+            <span class="vc-label">Draft with your voice profile</span>
+            <p><span class="rk green">Undergraduates in Malaysian public universities</span> now use AI tools for much of their drafting (Author, 2025). <span class="rk green">Yet we know little about</span> how this changes the way they revise. <span class="rk green">This study examines</span> revision practices among 120 first-year students and <span class="rk green">suggests</span> that feedback timing matters more than the tool itself.</p>
+          </div>
+        </div>
+        <ul class="risk-legend">
+          <li><span class="rk red">Red</span>: generic AI phrasing. Delete it or say it plainly.</li>
+          <li><span class="rk amber">Amber</span>: overstated claim. Hedge it to match your evidence.</li>
+          <li><span class="rk green">Green</span>: your habits: specific context, your hedging, your structure.</li>
+        </ul>
+        <p class="note">The personalised draft still comes from <em>your</em> notes and findings. The profile changes how it sounds, not what it claims. "Author, 2025" is a placeholder: add real citations yourself.</p>
+
+        <h3>Six steps to a draft in your own voice</h3>
+        <div class="flow flow-6">
+          <div><span>1</span><p><strong>Collect</strong> 2–3 samples of your best writing (500+ words each)</p></div>
+          <div><span>2</span><p><strong>Analyse</strong> your style with the prompt below</p></div>
+          <div><span>3</span><p><strong>Edit</strong> the profile: keep what you like, drop habits you want to lose</p></div>
+          <div><span>4</span><p><strong>Save</strong> it in a Gem (see 4.6) so it applies every time</p></div>
+          <div><span>5</span><p><strong>Draft</strong> from your own notes, data and argument</p></div>
+          <div><span>6</span><p><strong>Revise</strong> by hand and read it aloud: does it sound like you?</p></div>
+        </div>
+
+        <h3>Worked example: drafting from your own past paper</h3>
+        <p>Aisyah has a published paper she wrote as first author. She uses it as the voice sample for a new paper. Here is the full conversation in Gemini:</p>
+
+        <div class="chat-demo">
+          <div class="cd-turn">
+            <span class="cd-step">1</span>
+            <div class="cm-bubble cm-user">
+              <span class="file-chip cd-file"><b class="cd-ext">PDF</b> Aisyah_2024_Feedback-Literacy_JPP.pdf · 14 pages</span>
+              This is a paper I wrote as first author. I drafted the Introduction and Discussion myself. Analyse only my <strong>writing style</strong> in those two sections, not the content. Give me a reusable voice profile of max 150 words, with short quotes from the paper as examples.
+            </div>
+          </div>
+          <div class="cd-turn">
+            <span class="cd-step">2</span>
+            <div class="cm-bubble cm-ai">
+              <strong>Your voice profile</strong>
+              <ul>
+                <li>Sentences average 18–22 words; you often follow two long sentences with a short one ("This matters.").</li>
+                <li>You open paragraphs with a claim, then cite: "Feedback literacy remains uneven across faculties (…)".</li>
+                <li>Findings are hedged: "suggests", "appears to"; never "proves".</li>
+                <li>"We" for decisions, passive for procedures.</li>
+                <li>British spelling; "Taken together" to synthesise.</li>
+                <li>No rhetorical questions; few adjectives.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="cd-turn">
+            <span class="cd-step">3</span>
+            <div class="cm-bubble cm-user">
+              Good. Remove "Taken together" because I overuse it. Now use this profile to draft the <strong>first paragraph of my new paper's Introduction</strong> from my notes only. Mark gaps as [ADD SOURCE] or [EXPAND].
+              <span class="cd-notes">• Most undergraduates use AI tools for drafting (2025 campus survey: 68%)<br>• Little is known about how this affects revision<br>• Gap: no studies in Malaysian public universities<br>• My study: 120 first-years, revision logs + interviews</span>
+            </div>
+          </div>
+          <div class="cd-turn">
+            <span class="cd-step">4</span>
+            <div class="cm-bubble cm-ai cd-draft">
+              <p>Most undergraduates now use AI tools when they draft; in a 2025 campus survey, 68% reported doing so <span class="cd-mark">[ADD SOURCE]</span>. <span class="cd-ann" data-n="a">Less is known about what happens when they revise.</span> In Malaysian public universities, this question <span class="cd-ann" data-n="b">appears to remain unexamined</span> <span class="cd-mark">[ADD SOURCE]</span>. <span class="cd-ann" data-n="c">We address this gap</span> by analysing the revision logs of 120 first-year students and interviewing <span class="cd-mark">[EXPAND: number]</span> of them.</p>
+            </div>
+          </div>
+          <ul class="cd-legend">
+            <li><span class="cd-key">a</span> Short sentence after a long one: matches her rhythm.</li>
+            <li><span class="cd-key">b</span> Hedged with "appears to", as in her paper, because she has not yet confirmed the gap.</li>
+            <li><span class="cd-key">c</span> Active "we" for a research decision.</li>
+            <li><span class="cd-mark">[…]</span> Gaps she must fill herself. Every claim comes from her notes; nothing was added.</li>
+          </ul>
+        </div>
+
+        <p>She then runs the voice check (below), rewrites the flagged sentences herself, checks every source, and saves the profile in a Gem for the rest of the paper.</p>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>All in one: past paper → voice profile → draft</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Attached is a paper I wrote as [first/sole] author. I drafted the [sections] myself.
+Step 1: Analyse only my WRITING STYLE in those sections (not the content) and summarise it as a voice profile of max 150 words, quoting short examples. Stop and show me the profile before going further.
+Step 2: When I approve it, draft [section/paragraph, ~n words] for my NEW paper using ONLY the notes I give you. Follow the profile; do not reuse sentences, ideas or references from the attached paper; mark gaps as [ADD SOURCE] or [EXPAND].</pre>
+        </div>
+
+        <div class="two-col">
+          <div class="pro-box">
+            <h3>Choosing a good voice sample</h3>
+            <ul>
+              <li>A paper or chapter where <strong>you</strong> wrote the text, ideally as sole or first author</li>
+              <li>Point Gemini to the sections you drafted yourself: co-authored papers mix several voices</li>
+              <li>The same genre as your new text: an article for an article, a thesis chapter for a thesis</li>
+              <li>2–3 samples beat one, and recent writing beats old</li>
+            </ul>
+          </div>
+          <div class="con-box">
+            <h3>Watch out for</h3>
+            <ul>
+              <li><strong>Self-plagiarism:</strong> tell Gemini not to reuse sentences from the sample, and check the draft for recycled text</li>
+              <li><strong>Copyright:</strong> prefer your accepted manuscript or preprint over the publisher's PDF</li>
+              <li><strong>Privacy:</strong> unpublished drafts belong in your Workspace for Education account (see 1.4)</li>
+              <li>Remove tracked changes, comments and reviewer notes before attaching</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Prompt templates</h3>
+        <div class="prompt">
+          <div class="prompt-head"><span>Step 2: Build my voice profile</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Below are [3] samples of my own academic writing. Analyse my STYLE, not the content. Describe:
+(1) average sentence length and variation, (2) formality and vocabulary, (3) how I hedge claims, (4) active/passive voice and use of "I"/"we", (5) how I open and close paragraphs, (6) how I integrate citations, (7) my typical transition words, (8) spelling variant and punctuation habits, (9) phrases I never use.
+Write it as a concise "voice profile" (max 200 words) that another writer could follow. Quote short examples from my samples.
+
+[Sample 1]
+[Sample 2]
+[Sample 3]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Step 5: Draft from my notes in my voice</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Using my voice profile below, turn my notes into a draft [section/paragraph] of about [n] words.
+Rules: use only the ideas, findings and sources in my notes; keep my terminology; do not add claims, statistics or citations; mark gaps as [ADD SOURCE] or [EXPAND]; avoid these words: delve, pivotal, tapestry, landscape, multifaceted, invaluable, revolutionise.
+
+VOICE PROFILE: [paste]
+MY NOTES: [paste]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Voice check: does this sound like me?</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Compare the draft below with my voice profile. List every sentence that does not sound like me (wrong length, wrong register, generic phrasing, over- or under-hedging) and say why. Do not rewrite them. I will revise them myself.
+
+VOICE PROFILE: [paste]
+DRAFT: [paste]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Notes in Bahasa Melayu, draft in English (or vice versa)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>My notes are in Bahasa Melayu. Draft the paragraph in English, following my voice profile. Keep these terms in the original language, in italics, with a short gloss the first time: [list, e.g. sekolah kebangsaan, guru cemerlang]. Do not translate quotations from participants; keep them in Malay and give an English translation in brackets.
+
+VOICE PROFILE: [paste]
+NOTES: [paste]</pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <h3>Personalised does not mean undisclosed</h3>
+          <p>A voice profile makes Gemini's output sound like you, which makes honesty <em>more</em> important, not less. The ideas, analysis and evidence must still be yours; the draft is a starting point you substantially rewrite; and AI-assisted drafting must be disclosed wherever your university or journal requires it (Module 6). Never use a voice profile, or a "humaniser" tool, to disguise AI-generated text or get around AI detectors.</p>
+        </div>
+
+        <h2>5.6 When the output isn't what you expected</h2>
+        <p>Even a good prompt sometimes gets a poor answer: too generic, the wrong tone, a changed meaning, or ignored instructions. Don't start over in frustration, and don't accept it either. <strong>Name the problem, then fix that specific problem.</strong></p>
+
+        <h3>Diagnose it: symptom, likely cause, quick fix</h3>
+        <div class="table-wrap wrap">
+          <table class="diag-table">
+            <thead><tr><th>What you see</th><th>Likely cause</th><th>Try this</th></tr></thead>
+            <tbody>
+              <tr><td><span class="sym">Too generic or vague</span></td><td>Not enough context about your field, audience or purpose</td><td>Add the missing RTCFC elements (2.1): who it's for, which journal, what the paragraph must achieve</td></tr>
+              <tr><td><span class="sym">Wrong tone or "sounds like AI"</span></td><td>No style guidance, so it falls back to its default register</td><td>Give your voice profile (5.5) or paste one paragraph of your own writing as a model</td></tr>
+              <tr><td><span class="sym">Changed my meaning or claims</span></td><td>You asked to "improve" without saying what must stay fixed</td><td>"Keep every claim, number and citation exactly. Only change [wording/length]." Ask for a table of changes</td></tr>
+              <tr><td><span class="sym">Ignored an instruction</span></td><td>Too many instructions at once, or the key one is buried</td><td>Put the most important rule first, number the rules, and ask it to confirm each one was followed</td></tr>
+              <tr><td><span class="sym">Too long or too short</span></td><td>No length target</td><td>Give an exact target: "about 150 words" or "cut by 20%", not "make it shorter"</td></tr>
+              <tr><td><span class="sym">Invented facts, numbers or references</span></td><td>It is predicting, not looking things up (1.2)</td><td>Don't argue with it. Ground it in your sources (Gemini Notebook, 3.4) or remove the claim and verify it yourself</td></tr>
+              <tr><td><span class="sym">American spelling, or the wrong language</span></td><td>No language variant stated</td><td>"Use British English throughout" or "Reply in Bahasa Melayu"; add it to your Gem's instructions</td></tr>
+              <tr><td><span class="sym">Stuck on an old idea, or repeating itself</span></td><td>Earlier messages in a long chat are steering the output</td><td>Start a fresh chat with a clean summary of what you need (see the reset prompt below)</td></tr>
+              <tr><td><span class="sym">Misses part of a long document</span></td><td>Too much text for one request (the context window, 1.2)</td><td>Work section by section, or put the document in Gemini Notebook</td></tr>
+              <tr><td><span class="sym">Rewrote the whole text when you wanted one change</span></td><td>The request covered everything</td><td>Use Canvas (4.7): highlight only the passage to change</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>The recovery routine</h3>
+        <p>Work down the steps. Most problems are solved by step 2 or 3.</p>
+        <ol class="recovery">
+          <li><span class="rc-n">1</span><div><h4>Name the problem</h4><p>Say exactly what is wrong, using the table above: "the tone is too informal", not "this is bad".</p></div></li>
+          <li><span class="rc-n">2</span><div><h4>Give specific feedback</h4><p>Quote the problem sentence, say what you want instead, and say what must not change.</p></div></li>
+          <li><span class="rc-n">3</span><div><h4>Show an example</h4><p>Paste a sentence or paragraph that is "like this". One good example beats ten adjectives.</p></div></li>
+          <li><span class="rc-n">4</span><div><h4>Break the task down</h4><p>Ask for one thing at a time: structure first, then wording, then length.</p></div></li>
+          <li><span class="rc-n">5</span><div><h4>Reset</h4><p>Use <em>Edit prompt</em> on your original message, or start a new chat with a clean summary. Long chats drift.</p></div></li>
+          <li><span class="rc-n">6</span><div><h4>Change the tool</h4><p>Switch to the more capable model, use Gemini Notebook for source-based answers, or Canvas for targeted edits.</p></div></li>
+          <li class="rc-stop"><span class="rc-n">7</span><div><h4>Stop and write it yourself</h4><p>If three rounds haven't worked, the fastest route is usually your own pen. Use Gemini to check the result instead.</p></div></li>
+        </ol>
+
+        <h3>Worked example: fixing a "tighten this" request</h3>
+        <div class="chat-demo">
+          <div class="cd-turn">
+            <span class="cd-step">1</span>
+            <div class="cm-bubble cm-user">Tighten this paragraph: "Our findings suggest that delayed feedback may improve revision quality among first-year students (Author, 2024), although the effect was smaller for students with prior writing instruction."</div>
+          </div>
+          <div class="cd-turn">
+            <span class="cd-step">2</span>
+            <div class="cm-bubble cm-ai cd-draft"><p>Our findings <span class="cd-bad">prove</span> that delayed feedback improves revision quality among first-year students.</p>
+            <span class="cd-issue">✘ "suggest … may" became "prove"   ✘ citation removed   ✘ the limitation about prior instruction is gone</span></div>
+          </div>
+          <div class="cd-turn">
+            <span class="cd-step">3</span>
+            <div class="cm-bubble cm-user">You changed my meaning. Redo it with these rules: (1) keep "suggest" and "may" exactly, (2) keep the citation, (3) keep the point about prior writing instruction, (4) only remove redundant words. Show your changes in a table: original | revised | reason.</div>
+          </div>
+          <div class="cd-turn">
+            <span class="cd-step">4</span>
+            <div class="cm-bubble cm-ai cd-draft"><p>Our findings suggest that delayed feedback may improve first-year students' revision quality (Author, 2024), though less so for those with prior writing instruction.</p>
+            <span class="cd-ok">✔ hedges kept   ✔ citation kept   ✔ limitation kept   ✔ 3 words shorter</span></div>
+          </div>
+        </div>
+        <p>The fix took one round because the feedback named each problem (step 1), said exactly what to keep (step 2), and asked for a change table so the result was easy to check.</p>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Fix-it feedback</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>That's not what I needed. Problems: (1) [quote the issue and say what's wrong], (2) [...].
+Redo it. Keep exactly: [claims / numbers / citations / terms that must not change].
+Change only: [what you want changed].
+Before you answer, restate my rules in one line each, then show the revised version.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Show, don't tell: match an example</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Here is a paragraph I wrote that has the style I want:
+[paste your example]
+Rewrite the text below to match that example's sentence length, hedging and tone. Do not change any claims or citations.
+[paste text]</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Reset: carry what works into a fresh chat</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Summarise this conversation as a short brief I can paste into a new chat: the task, the final agreed rules, the format I want, and anything I said I did NOT want. Bullet points only, no commentary.</pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <h3>Pushing back is not fact-checking</h3>
+          <p>If you tell Gemini "that's wrong", it will often agree and change its answer, even when the original was right or your correction is wrong. Its agreement proves nothing. For anything factual, check the source yourself (3.7). When a fix works, add the rule to your Gem's instructions (4.6) so you don't have to repeat it.</p>
+        </div>
+
+        <div class="exercise">
+          <h3>Hands-on exercise 5</h3>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 25 min</p>
+          <ol>
+            <li>Take 200–300 words of your own writing and run the four editing passes (5.1) as separate prompts, using the editing prompts in 5.2.</li>
+            <li>Accept or reject each suggestion. Note one pattern in your writing you want to fix in future.</li>
+            <li>Attach a paper or chapter you wrote yourself and run the "All in one: past paper → voice profile → draft" prompt (5.5). Edit the profile, remove one habit you overuse, and save it in a Gem.</li>
+            <li>Use the profile to draft one paragraph from your notes. Run the voice check, revise the flagged sentences yourself, and read the result aloud to a partner: can they tell which parts you changed?</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="5">
+            <li>Run "Reviewer 2" (5.3) on the same text. Which concern is the most useful?</li>
+            <li>Pick a difficult passage from a source you cite. Ask Gemini to explain it, write your own paraphrase without looking at the original, then ask Gemini whether your version is too close to the source (5.4). Add the citation.</li>
+                      <li>Take one Gemini output from today that wasn't what you wanted. Use the symptom table (5.6) to name the problem, work through the recovery routine, and note which step fixed it. Add that fix to your Gem's instructions.</li>
+          </ol>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#module-4">← Module 4: Drafting &amp; Structure</a>
+          <a class="pager-next" href="#module-6">Module 6: Ethics &amp; Integrity →</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 6 ================= -->
+    <section class="page" id="page-module-6" data-page="module-6" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 6</p>
+          <h1>Ethics &amp; Integrity</h1>
+          <p class="lead">Use AI transparently and responsibly, in line with Universiti Malaya's AI policy and your publishers' rules.</p>
+        </header>
+
+        <div class="objectives">
+          <h2>Learning objectives</h2>
+          <ul>
+            <li>Apply Universiti Malaya's AI policy, including the five levels of AI use and the thesis declaration</li>
+            <li>Apply common principles from publisher AI policies</li>
+            <li>Protect confidential data and intellectual property</li>
+            <li>Write a clear AI-use disclosure statement</li>
+          </ul>
+        </div>
+
+        <h2>6.1 Core principles</h2>
+        <div class="feature-grid">
+          <div class="feature"><h4>Accountability</h4><p>You are fully responsible for everything you submit, including any errors introduced by AI.</p></div>
+          <div class="feature"><h4>Authorship</h4><p>AI tools cannot be listed as authors. Major publishers agree on this because AI cannot take responsibility for the work.</p></div>
+          <div class="feature"><h4>Transparency</h4><p>Disclose substantive AI use as your publisher, funder or institution requires.</p></div>
+          <div class="feature"><h4>Originality</h4><p>The ideas, analysis and interpretation must be genuinely yours.</p></div>
+          <div class="feature"><h4>Confidentiality</h4><p>Don't upload unpublished manuscripts you are reviewing, personal data or restricted material.</p></div>
+          <div class="feature"><h4>Verification</h4><p>Check every fact, figure and citation against original sources.</p></div>
+        </div>
+
+        <h2>6.2 Universiti Malaya's AI policy and guidelines</h2>
+        <p>On 15 March 2026, Universiti Malaya released two documents that govern AI use in teaching, learning and research: the <strong>Universiti Malaya Academic Policy on Artificial Intelligence (AI)</strong> and the <strong>Universiti Malaya Guidelines on the Ethical Use of Artificial Intelligence (AI)</strong>. They apply to all students and academic staff, across coursework, assessments, research projects, final-year projects, dissertations, theses, and online or blended learning.</p>
+
+        <blockquote class="um-quote">
+          <p>"AI should support learning and creativity rather than replace students' own thinking, analysis, and academic effort."</p>
+          <cite>Universiti Malaya Academic Policy on Artificial Intelligence (AI)</cite>
+        </blockquote>
+
+        <h3>The five levels of AI use</h3>
+        <p>For every assessment, your lecturer sets a permitted level of AI use and tells you at the start of the semester. The level, not your own judgement, decides what is allowed. The right-hand column maps each level to what you have practised in this workshop.</p>
+
+        <ol class="level-ladder">
+          <li class="lv lv0">
+            <span class="lv-num">Level 0</span>
+            <div class="lv-body"><h4>No AI use</h4><p class="lv-def">"AI tools are not permitted."</p></div>
+            <p class="lv-map">No Gemini at all, not even for grammar.</p>
+          </li>
+          <li class="lv lv1">
+            <span class="lv-num">Level 1</span>
+            <div class="lv-body"><h4>Minimal use</h4><p class="lv-def">"Basic tools such as grammar or spelling checkers may be allowed."</p></div>
+            <p class="lv-map">Proofreading only: the "track-changes style edit" in 5.2. No rewriting.</p>
+          </li>
+          <li class="lv lv2">
+            <span class="lv-num">Level 2</span>
+            <div class="lv-body"><h4>Limited use</h4><p class="lv-def">"AI may assist with idea generation or concept clarification."</p></div>
+            <p class="lv-map">Concept explainer and Socratic partner (2.4), research question refiner (3.1), search terms (3.3).</p>
+          </li>
+          <li class="lv lv3">
+            <span class="lv-num">Level 3</span>
+            <div class="lv-body"><h4>Open use</h4><p class="lv-def">"AI may support learning and content development with proper declaration."</p></div>
+            <p class="lv-map">Gemini Notebook (3.4), outlining and drafting support (Module 4), Gems, Canvas and voice profiles (4.6, 4.7, 5.5), all declared.</p>
+          </li>
+          <li class="lv lv4">
+            <span class="lv-num">Level 4</span>
+            <div class="lv-body"><h4>Integrated use</h4><p class="lv-def">"AI may be required as part of the assessment activity."</p></div>
+            <p class="lv-map">Tasks where using and critiquing Gemini <em>is</em> the assignment, e.g. evaluating its output.</p>
+          </li>
+        </ol>
+
+        <div class="two-col">
+          <div class="pro-box">
+            <h3>Students may use AI for</h3>
+            <ul>
+              <li>Brainstorming ideas or planning assignments</li>
+              <li>Clarifying difficult concepts</li>
+              <li>Summarising reading materials</li>
+              <li>Supporting data analysis or coding tasks</li>
+              <li>Generating visual materials or learning aids</li>
+            </ul>
+            <p class="um-cond">…only where the assessment's level allows it.</p>
+          </div>
+          <div class="con-box">
+            <h3>Students must not</h3>
+            <ul>
+              <li>Let AI replace their own thinking or analysis</li>
+              <li>Submit work that does not reflect their own understanding and intellectual contribution</li>
+              <li>Fail to declare AI use, which "may be considered academic misconduct"</li>
+              <li>Upload theses or research reports to public AI platforms during assessment</li>
+              <li>Upload confidential academic materials, research data or university documents to public AI platforms without permission</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>Theses, dissertations and research reports</h3>
+        <div class="feature-grid">
+          <div class="feature"><h4>Permitted support</h4><p>Improving writing clarity, organising ideas and structure, and explaining concepts, without replacing your original intellectual contribution.</p></div>
+          <div class="feature"><h4>Supervisor first</h4><p>Inform your supervisor before using AI in your thesis or research project. Use in thesis writing must be approved by your supervisor or the relevant Responsibility Centre.</p></div>
+          <div class="feature"><h4>Declare in the thesis</h4><p>A declaration of AI use must be included in the thesis or dissertation, and you may be asked for logs or evidence of how you used AI.</p></div>
+        </div>
+
+        <h3>Declaring AI use, the UM way</h3>
+        <p>UM's guidelines ask you to (1) <strong>declare the AI tools used</strong>, (2) <strong>explain how each tool was used</strong>, and (3) <strong>provide logs or evidence if requested</strong>. The easiest way to meet the third requirement is to keep a simple log as you work:</p>
+
+        <div class="table-wrap wrap">
+          <table class="ai-log">
+            <thead><tr><th>Date</th><th>Tool</th><th>Purpose</th><th>What I asked (summary)</th><th>How I used the output</th><th>Verified?</th></tr></thead>
+            <tbody>
+              <tr><td>12 Oct 2026</td><td>Gemini Notebook</td><td>Compare 8 papers on feedback literacy</td><td>Cross-source comparison prompt (3.4)</td><td>Notes for my literature review; rewritten in my own words</td><td>✔ All 8 citations checked</td></tr>
+              <tr><td>15 Oct 2026</td><td>Gemini (Canvas)</td><td>Grammar check, Chapter 2</td><td>Track-changes style edit (5.2)</td><td>Accepted 14 of 22 suggestions</td><td>✔ Meaning unchanged</td></tr>
+              <tr><td>18 Oct 2026</td><td>Gemini (Canvas)</td><td>draw.io code for conceptual framework figure</td><td>Canvas prompt for draw.io code (4.8)</td><td>Opened in draw.io; layout and labels edited; exported as SVG</td><td>✔ Approved by supervisor</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Sample thesis declaration (adapt to your faculty's template)</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>Declaration of the Use of Artificial Intelligence (AI)
+
+In accordance with the Universiti Malaya Academic Policy on Artificial Intelligence (AI), I declare that I used the following AI tools in preparing this [thesis/dissertation/research report], with the knowledge and approval of my supervisor:
+
+- Google Gemini (Gemini Notebook): to summarise and compare literature that I had located and read, in Chapter 2.
+- Google Gemini (Canvas): to check grammar and clarity in Chapters 1–5.
+- Google Gemini (Canvas): to generate draw.io code for Figure 3.1, which I edited and verified in draw.io.
+
+The research questions, data, analysis, interpretation and conclusions are my own. I reviewed and verified all AI-assisted content, take full responsibility for this work, and can provide a log of my AI use on request.</pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <h3>What counts as a "public AI platform" for Gemini users</h3>
+          <p>Treat a <strong>personal Google account</strong> (Free, AI Plus or AI Pro) as a public AI platform: as section 1.4 shows, those chats may be reviewed by people and used to train models. Never upload your thesis, unpublished research data or university documents there without permission. Before using your UM-provided account for research material, ask your supervisor or faculty whether it is approved for that purpose.</p>
+        </div>
+
+        <p class="note">This is a workshop summary, not the official text. Quotations are taken from UM's published summaries of the two documents. Always read the full policy and guidelines on the <a href="https://spm.um.edu.my/policy-on-the-use-of-artificial-intelligence-ai-in-teaching-and-learning/" target="_blank" rel="noopener">UM policy page</a> and the <a href="https://spm.um.edu.my/student/ethical-use-of-artificial-intelligence-ai-in-teaching-and-learning/" target="_blank" rel="noopener">UM ethical-use guidelines page</a>, and follow your lecturer's stated AI level and any faculty-specific thesis rules.</p>
+
+        <h2>6.3 Traffic-light guide</h2>
+        <div class="traffic">
+          <div class="tl-green">
+            <h3>Generally acceptable</h3>
+            <ul>
+              <li>Brainstorming and exploring ideas</li>
+              <li>Explaining concepts and methods</li>
+              <li>Grammar, spelling and language polishing</li>
+              <li>Feedback on structure and clarity</li>
+              <li>Generating search terms</li>
+            </ul>
+          </div>
+          <div class="tl-amber">
+            <h3>Check policy and disclose</h3>
+            <ul>
+              <li>Summarising literature for your review</li>
+              <li>Substantial rewriting of your text</li>
+              <li>Help with code or analysis</li>
+              <li>Translation of your own work</li>
+              <li>Generating figures or images</li>
+            </ul>
+          </div>
+          <div class="tl-red">
+            <h3>Not acceptable</h3>
+            <ul>
+              <li>Submitting AI-generated text as your own</li>
+              <li>Citing references you haven't read or verified</li>
+              <li>Fabricating or manipulating data</li>
+              <li>Uploading confidential peer-review material</li>
+              <li>Using AI where an assessment prohibits it</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">This is a general guide. At UM, the AI level your lecturer sets for each assessment (6.2), your supervisor's instructions and the target journal's author guidelines always take precedence. Check them before you start.</p>
+
+        <h2>6.4 Data privacy checklist</h2>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> I have removed names and identifiers from any participant data</label></li>
+          <li><label><input type="checkbox"> I am not uploading material under an NDA, embargo or ethics restriction</label></li>
+          <li><label><input type="checkbox"> I am not uploading another researcher's unpublished work</label></li>
+          <li><label><input type="checkbox"> I know whether my account's chats may be reviewed or used for training</label></li>
+          <li><label><input type="checkbox"> I am using my institution's approved account where one exists</label></li>
+        </ul>
+
+        <h2>6.5 Writing a disclosure statement</h2>
+        <p>Many publishers ask authors to describe AI use in the methods section or a dedicated declaration. Be specific about the <strong>tool</strong>, the <strong>purpose</strong>, and your <strong>responsibility</strong>.</p>
+        <div class="prompt">
+          <div class="prompt-head"><span>Sample disclosure statement</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>During the preparation of this work, the author(s) used Google Gemini to [improve language and readability / generate an initial outline / suggest search terms]. After using this tool, the author(s) reviewed and edited the content as needed and take full responsibility for the content of the publication.</pre>
+        </div>
+
+        <h2>6.6 About AI detectors</h2>
+        <p>AI-text detectors are unreliable. They produce false positives, especially for non-native English writers, and false negatives. Don't rely on them to "prove" your work is human-written, and don't use "humanising" tools to disguise AI text. The best protection is transparent use and a record of your own process: drafts, notes and version history.</p>
+
+        <div class="exercise">
+          <h3>Hands-on exercise 6</h3>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 15 min</p>
+          <ol>
+            <li>Classify every way you used Gemini in today's workshop as green, amber or red (6.3), and note the lowest UM AI level (6.2) at which each use would be allowed.</li>
+            <li>Run the data privacy checklist (6.4) on every file you uploaded today. Given your account type (1.4), should any of them not have been uploaded?</li>
+            <li>Discuss with a partner: if an AI detector flagged your honest work, what records from today (your AI-use log, drafts, version history) would show how you actually wrote it (6.6)?</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="4">
+            <li>Read UM's AI policy and guidelines (links in 6.2) and the AI policy of one journal you plan to submit to. Note what must be disclosed and where.</li>
+            <li>For one current assignment or thesis chapter, find out its permitted UM AI level (0–4). List which workshop techniques you may use at that level.</li>
+            <li>Start an AI-use log using the table in 6.2, and adapt the sample thesis declaration to your own work.</li>
+            <li>Draft a disclosure statement for your current paper (6.5).</li>
+          </ol>
+        </div>
+
+        <div class="callout callout-principle">
+          <h3>Workshop takeaway</h3>
+          <p>Use Gemini to <strong>think</strong>, <strong>question</strong> and <strong>polish</strong>, and keep the <strong>ideas</strong>, <strong>evidence</strong> and <strong>accountability</strong> firmly your own.</p>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#module-5">← Module 5: Editing &amp; Language</a>
+          <a class="pager-next" href="#module-7">Module 7: Conclusion &amp; Next Steps →</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= MODULE 7 ================= -->
+    <section class="page" id="page-module-7" data-page="module-7" hidden>
+      <div class="container module">
+        <header class="module-head">
+          <p class="eyebrow">Module 7</p>
+          <h1>Conclusion &amp; Next Steps</h1>
+          <p class="lead">The key lessons from the workshop on one page, the tools to reach for, and how to keep improving on your own.</p>
+        </header>
+
+        <h2>7.1 Key lessons from Modules 1–6</h2>
+        <div class="lesson-grid">
+          <a class="lesson" href="#module-1">
+            <span class="card-num">01</span>
+            <h3>Getting Started</h3>
+            <p>Gemini <strong>predicts</strong> text; it doesn't look facts up. Fluent is not the same as true. Use your <strong>Workspace for Education</strong> account for research, because paid personal plans aren't more private.</p>
+          </a>
+          <a class="lesson" href="#module-2">
+            <span class="card-num">02</span>
+            <h3>Prompting Essentials</h3>
+            <p>Good output needs good instructions: <strong>Role, Task, Context, Format, Constraints</strong>. Iterate in the same chat, and ask Gemini to flag what it's unsure about.</p>
+          </a>
+          <a class="lesson" href="#module-3">
+            <span class="card-num">03</span>
+            <h3>Literature &amp; Research</h3>
+            <p><strong>Find</strong> sources in Scopus or Web of Science; <strong>work with</strong> them in Gemini Notebook, then draft a short review from the notebook. Gemini can't search paywalled databases, and every citation must be checked.</p>
+          </a>
+          <a class="lesson" href="#module-4">
+            <span class="card-num">04</span>
+            <h3>Drafting &amp; Structure</h3>
+            <p><strong>You write, it scaffolds.</strong> Use Gems for repeat tasks, Canvas for quick documents and editable draw.io diagrams, and Nano Banana for quick diagram drafts, never for data figures.</p>
+          </a>
+          <a class="lesson" href="#module-5">
+            <span class="card-num">05</span>
+            <h3>Editing &amp; Language</h3>
+            <p>Edit in passes, one focus at a time. A <strong>voice profile</strong> from your own writing keeps drafts sounding like you, but it never replaces disclosure. When output misses, name the problem and give specific feedback.</p>
+          </a>
+          <a class="lesson" href="#module-6">
+            <span class="card-num">06</span>
+            <h3>Ethics &amp; Integrity</h3>
+            <p>Follow <strong>UM's AI level</strong> for each assessment, tell your supervisor, keep an AI-use log, and <strong>declare</strong> your use. Never upload confidential work to public AI.</p>
+          </a>
+        </div>
+
+        <h2>7.2 Your Gemini toolkit</h2>
+        <p>Not sure which tool to use? Start here.</p>
+        <div class="table-wrap wrap">
+          <table class="toolkit">
+            <thead><tr><th>When you want to…</th><th>Use</th><th>Remember</th><th>See</th></tr></thead>
+            <tbody>
+              <tr><td>Understand a concept or test an idea</td><td><strong>Gemini chat</strong></td><td>Ask it to question you, not to agree</td><td><a href="#module-2">2.4</a></td></tr>
+              <tr><td>Find literature</td><td><strong>Scopus / Web of Science</strong> (not Gemini)</td><td>Gemini can't search paywalled databases</td><td><a href="#module-3">3.2</a></td></tr>
+              <tr><td>Summarise and compare papers you have</td><td><strong>Gemini Notebook</strong></td><td>Click every citation to check it</td><td><a href="#module-3">3.4</a></td></tr>
+              <tr><td>Draft a short literature review from those papers</td><td><strong>Notebook → Gemini app</strong></td><td>Only notebook sources; [NEED SOURCE] for gaps</td><td><a href="#module-3">3.6</a></td></tr>
+              <tr><td>Get a quick web overview of a topic</td><td><strong>Deep Research</strong></td><td>Web only; verify every source</td><td><a href="#module-1">1.5</a></td></tr>
+              <tr><td>Repeat the same task with the same rules</td><td><strong>Gems</strong></td><td>Files follow your account's privacy rules</td><td><a href="#module-4">4.6</a></td></tr>
+              <tr><td>Draft minutes, plans, READMEs</td><td><strong>Canvas</strong></td><td>Fill every [MISSING] marker yourself</td><td><a href="#module-4">4.7</a></td></tr>
+              <tr><td>Sketch a framework or flowchart quickly</td><td><strong>Nano Banana</strong></td><td>A flat image; no data figures; check the venue's rules</td><td><a href="#module-4">4.8</a></td></tr>
+              <tr><td>Make an editable thesis or paper figure</td><td><strong>draw.io code from Canvas</strong></td><td>Paste into Extras → Edit Diagram; keep the .drawio file</td><td><a href="#module-4">4.8</a></td></tr>
+              <tr><td>Keep drafts in your own style</td><td><strong>Voice profile</strong> in a Gem</td><td>Personalised still means declared</td><td><a href="#module-5">5.5</a></td></tr>
+              <tr><td>Fix an output that missed the mark</td><td><strong>The recovery routine</strong></td><td>Name the problem, give specific feedback, reset if needed</td><td><a href="#module-5">5.6</a></td></tr>
+              <tr><td>Stay compliant</td><td><strong>AI-use log + declaration</strong></td><td>Know your assessment's UM AI level</td><td><a href="#module-6">6.2</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>7.3 The workflow on one line</h2>
+        <div class="flow flow-7">
+          <div><span>1</span><p><strong>Check</strong> the UM AI level and tell your supervisor</p></div>
+          <div><span>2</span><p><strong>Find</strong> sources in scholarly databases</p></div>
+          <div><span>3</span><p><strong>Ground</strong> your reading in Gemini Notebook</p></div>
+          <div><span>4</span><p><strong>Draft</strong> from your own notes, in your voice</p></div>
+          <div><span>5</span><p><strong>Edit</strong> in focused passes</p></div>
+          <div><span>6</span><p><strong>Verify</strong> every claim and citation</p></div>
+          <div><span>7</span><p><strong>Declare</strong> using your AI-use log</p></div>
+        </div>
+
+        <h2>7.4 Five questions to ask before every use</h2>
+        <ul class="checklist">
+          <li><label><input type="checkbox"> <span><strong>Allowed?</strong> What AI level applies to this task, and does my supervisor know?</span></label></li>
+          <li><label><input type="checkbox"> <span><strong>Safe?</strong> Is this material allowed on the account I'm using?</span></label></li>
+          <li><label><input type="checkbox"> <span><strong>Mine?</strong> Do the ideas, analysis and argument still come from me?</span></label></li>
+          <li><label><input type="checkbox"> <span><strong>True?</strong> Can I verify every fact, number and citation against a real source?</span></label></li>
+          <li><label><input type="checkbox"> <span><strong>Recorded?</strong> Have I logged this use so I can declare it?</span></label></li>
+        </ul>
+
+        <h2>7.5 Keep learning on your own</h2>
+        <h3>A four-week practice plan</h3>
+        <div class="weeks">
+          <div class="week"><span class="week-num">Week 1</span><h4>Set up</h4><p>Sign in with your UM account, check your activity settings, and build one Gem with your writing rules.</p></div>
+          <div class="week"><span class="week-num">Week 2</span><h4>Read smarter</h4><p>Put 5–10 papers for one chapter in a Gemini Notebook. Compare them, and check every citation it gives.</p></div>
+          <div class="week"><span class="week-num">Week 3</span><h4>Write like you</h4><p>Build your voice profile from your own paper and draft one section from your notes. Revise it by hand.</p></div>
+          <div class="week"><span class="week-num">Week 4</span><h4>Make it official</h4><p>Review your AI-use log with your supervisor and draft your AI declaration.</p></div>
+        </div>
+
+        <h3>How to work things out yourself</h3>
+        <div class="feature-grid">
+          <div class="feature"><h4>Ask Gemini about Gemini</h4><p>"How do I [task] in Gemini? Give step-by-step instructions." Then check them against Google's help pages, because features change.</p></div>
+          <div class="feature"><h4>Test before you trust</h4><p>Try each new feature on a paper you know well first. If it makes mistakes there, it will make them on new work too.</p></div>
+          <div class="feature"><h4>Save what works</h4><p>Keep a personal prompt library (a Google Doc or a Gem) of the prompts from this workshop that worked for you.</p></div>
+          <div class="feature"><h4>Compare and regenerate</h4><p>For important outputs, regenerate or ask twice. Where the answers differ, that is where to check.</p></div>
+          <div class="feature"><h4>Ask a person</h4><p>Your supervisor, the UM Library and your faculty are the final word on what's acceptable, not Gemini.</p></div>
+          <div class="feature"><h4>Recheck the rules</h4><p>AI policies and Gemini plans change. Recheck UM's policy and your journal's rules at the start of every project.</p></div>
+        </div>
+
+        <h3>Useful links</h3>
+        <ul class="link-list">
+          <li><a href="https://support.google.com/gemini" target="_blank" rel="noopener">Gemini Apps Help</a>: official how-to guides for every feature</li>
+          <li><a href="https://support.google.com/notebooklm" target="_blank" rel="noopener">Gemini Notebook (NotebookLM) Help</a>: sources, notebooks and limits</li>
+          <li><a href="https://edu.google.com/intl/ALL_us/ai/gemini-for-education/" target="_blank" rel="noopener">Gemini for Education</a>: what your Workspace for Education account includes</li>
+          <li><a href="https://spm.um.edu.my/policy-on-the-use-of-artificial-intelligence-ai-in-teaching-and-learning/" target="_blank" rel="noopener">UM Policy on the Use of AI</a> and <a href="https://spm.um.edu.my/student/ethical-use-of-artificial-intelligence-ai-in-teaching-and-learning/" target="_blank" rel="noopener">UM Ethical Use of AI guidelines</a></li>
+          <li><a href="https://publicationethics.org" target="_blank" rel="noopener">COPE (Committee on Publication Ethics)</a>: publication ethics guidance, including AI and authorship</li>
+          <li>Your target journal's <strong>Guide for Authors</strong>: search for "AI", "generative" or "artificial intelligence"</li>
+        </ul>
+
+        <div class="exercise">
+          <h3>Final exercise: your next three actions</h3>
+          <ol>
+            <li>Write down <strong>one tool</strong> from the toolkit (7.2) you will use this week, and for which task.</li>
+            <li>Write down <strong>one rule</strong> you will follow every time (7.4).</li>
+            <li>Write down <strong>one thing</strong> to check with your supervisor (AI level, approval or declaration format).</li>
+          </ol>
+        </div>
+
+        <div class="callout callout-principle">
+          <h3>Remember</h3>
+          <p><strong>Gemini assists; you author.</strong> Use it to think, question and polish. Keep the ideas, the evidence and the responsibility your own.</p>
+        </div>
+
+        <nav class="pager" aria-label="Module navigation">
+          <a class="pager-prev" href="#module-6">← Module 6: Ethics &amp; Integrity</a>
+          <a class="pager-next" href="#home">Back to front page →</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Workshop: Gemini AI in Academic Writing · For training purposes. Gemini is a trademark of Google LLC; this workshop is not affiliated with Google.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js?v=2026-10-06g"></script>
+  <script src="js/slides.js?v=2026-10-06g"></script>
+</body>
+</html>

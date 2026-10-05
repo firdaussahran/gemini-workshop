@@ -1,0 +1,8 @@
+services:
+  gemini-workshop:
+    build: .
+    image: gemini-workshop:latest
+    container_name: gemini-workshop
+    ports:
+      - "8080:80"
+    restart: unless-stopped

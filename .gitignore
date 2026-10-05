@@ -1,0 +1,8 @@
+# Local working files (not part of the website)
+snapshots/
+*.log
+
+# macOS / editor files
+.DS_Store
+.vscode/
+.idea/
