@@ -1,5 +1,5 @@
 # Publishes the site/ folder to GitHub Pages on every push to main.
-# Live site: https://firdaussahran-um.github.io/gemini-workshop/
+# Live site: https://firdaussahran.github.io/gemini-workshop/
 name: Deploy to GitHub Pages
 
 on:

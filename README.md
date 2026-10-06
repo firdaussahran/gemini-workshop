@@ -2,7 +2,7 @@
 
 A static training website with a front page and seven tabs (six modules plus a conclusion).
 
-- **Live site:** https://firdaussahran-um.github.io/gemini-workshop/ (GitHub Pages, published automatically)
+- **Live site:** https://firdaussahran.github.io/gemini-workshop/ (GitHub Pages, published automatically)
 - **Staging site:** http://localhost:8080 (your local Docker copy, for checking changes before they go live)
 
 ## Structure
@@ -36,7 +36,7 @@ Nothing reaches the live site until you push, so you can experiment freely on st
 
 ## One-time setup on GitHub
 
-1. Sign in at https://github.com as **firdaussahran-um** and create a new repository:
+1. Sign in at https://github.com as **firdaussahran** and create a new repository:
    - name: **gemini-workshop**
    - visibility: **Public** (free GitHub Pages needs a public repository)
    - leave "Add a README", ".gitignore" and "license" **unticked** (this project already has them)
@@ -52,7 +52,7 @@ Nothing reaches the live site until you push, so you can experiment freely on st
    set **Source** to **GitHub Actions**.
 4. Open the **Actions** tab. If the first run failed because Pages wasn't switched on yet,
    click it and choose **Re-run all jobs**. When it's green, the site is live at
-   https://firdaussahran-um.github.io/gemini-workshop/.
+   https://firdaussahran.github.io/gemini-workshop/.
 
 ### Other hosting options
 The site is plain HTML/CSS/JS, so it can also be hosted elsewhere: upload the **contents of
