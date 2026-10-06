@@ -172,6 +172,12 @@ code { font-family: var(--font-mono); font-size: .88em; }
 .speaker-name { font-family: var(--font-serif); font-size: 1.35rem; color: #fff; margin: 0 0 2px; }
 .speaker-role { margin: 0 0 8px; font-weight: 600; color: #d6def3; }
 .speaker-org { margin: 0; font-size: .9rem; line-height: 1.5; color: #b9c4e0; }
+.speaker-email {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; padding: 6px 12px;
+  border-radius: 999px; border: 1px solid rgba(255, 255, 255, .3); background: rgba(255, 255, 255, .08);
+  color: #fff; font-size: .86rem; font-weight: 600; text-decoration: none; word-break: break-all;
+}
+.speaker-email:hover { background: rgba(255, 255, 255, .18); border-color: rgba(255, 255, 255, .6); }
 .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 700; color: var(--accent); margin-bottom: .6em; }
 .lead { font-size: 1.15rem; color: var(--muted); }
 
