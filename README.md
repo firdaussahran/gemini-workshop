@@ -7,7 +7,6 @@ writing: faster literature work, clearer drafts and sharper editing, while keepi
 original and your own.
 
 **Speaker:** Dr Firdaus Sahran, Senior Lecturer, Fakulti Sains Komputer & Teknologi Maklumat, Universiti Malaya
-([firdaussahran@um.edu.my](mailto:firdaussahran@um.edu.my))
 
 **For:** postgraduate students, early-career researchers and academic staff.
 
