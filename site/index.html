@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=2026-10-06i">
+  <link rel="stylesheet" href="css/styles.css?v=2026-10-06k">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -102,7 +102,7 @@
           <a class="module-card" href="#module-2">
             <span class="card-num">02</span>
             <h3>Prompting Essentials</h3>
-            <p>The anatomy of a good prompt, a reusable framework, and how to refine output through conversation.</p>
+            <p>The anatomy of a good prompt, a reusable framework, Gems (custom assistants), and how to refine output through conversation.</p>
           </a>
           <a class="module-card" href="#module-3">
             <span class="card-num">03</span>
@@ -112,7 +112,7 @@
           <a class="module-card" href="#module-4">
             <span class="card-num">04</span>
             <h3>Drafting &amp; Structure</h3>
-            <p>Outlines, paragraph logic, abstracts, introductions, results and discussion, plus Gems, Canvas and Nano Banana for quick drafting, documentation and research diagrams.</p>
+            <p>Outlines, paragraph logic, abstracts, introductions, results and discussion, plus Canvas and Nano Banana for quick drafting, documentation and research diagrams.</p>
           </a>
           <a class="module-card" href="#module-5">
             <span class="card-num">05</span>
@@ -307,7 +307,7 @@
               <tr><th scope="row">Price (Malaysia)</th>
                 <td data-plan="Free">RM0</td>
                 <td data-plan="AI Plus">RM23.99<wbr>/month<br><span class="hl">Free for 12 months for students*</span></td>
-                <td data-plan="AI Pro">RM97.99<wbr>/month<br><span class="hl">RM23.99 for students*</span></td>
+                <td data-plan="AI Pro">RM97.99<wbr>/month<br><span class="hl">RM23.99 for users*</span></td>
                 <td data-plan="Workspace Edu" class="plan-ws">Included**<br><span class="hl">Paid add-on optional†</span></td></tr>
               <tr><th scope="row">Models</th>
                 <td data-plan="Free">Fast model; limited Pro use</td>
@@ -373,7 +373,7 @@
           <div class="feature"><h4>Model selector</h4><p>Choose between faster and more capable models, depending on your plan.</p></div>
           <div class="feature"><h4>Chat history</h4><p>Revisit, rename, pin or delete earlier conversations.</p></div>
           <div class="feature"><h4>Response tools</h4><p>Regenerate, edit your prompt, copy, export to Docs, or use "double-check" to search for supporting or conflicting content.</p></div>
-          <div class="feature"><h4>Gems and Canvas</h4><p>Gems are saved assistants with standing instructions; Canvas is a side-by-side document editor. Both are covered in Module 4.</p></div>
+          <div class="feature"><h4>Gems and Canvas</h4><p>Gems are saved assistants with standing instructions (see 2.5); Canvas is a side-by-side document editor (see 4.7).</p></div>
           <div class="feature"><h4>Deep Research</h4><p>Where available, runs multi-step web research and produces a cited report. Verify its sources like any other.</p></div>
         </div>
         <p class="note">Features and names change often and vary by plan and region. If something here doesn't match your screen, look for the equivalent option.</p>
@@ -441,6 +441,7 @@
             <li>Structure prompts with role, task, context, format and constraints</li>
             <li>Refine output through iterative follow-up prompts</li>
             <li>Build a personal library of reusable academic prompts</li>
+            <li>Build and configure Gems as reusable academic assistants</li>
           </ul>
         </div>
 
@@ -499,17 +500,71 @@
           <p>Add <em>"If you are unsure, say so"</em> or <em>"Mark anything that should be verified"</em> to your prompts. It won't eliminate errors, but it makes them easier to spot.</p>
         </div>
 
+        <h2>2.5 Gems: reusable assistants for academic work</h2>
+        <p>A <strong>Gem</strong> is a saved Gemini assistant with your standing instructions, so you don't have to retype the same long prompt every session. Gems are available on all plans, including Free. Create one under <strong>Gems → New Gem</strong> (the left sidebar on the web).</p>
+
+        <div class="gem-mock" aria-label="Illustration of the Gem builder">
+          <div class="gem-mock-head"><span class="gem-dot" aria-hidden="true"></span>New Gem</div>
+          <dl class="gem-fields">
+            <div><dt>Name</dt><dd>Thesis Structure Coach</dd></div>
+            <div><dt>Instructions</dt><dd>The role, rules and output format: what the Gem must always and never do.</dd></div>
+            <div><dt>Knowledge</dt><dd><span class="file-chip">Thesis_Guidelines_2026.pdf</span><span class="file-chip">Chapter2_draft.docx</span><small>Up to 10 files, including from Google Drive</small></dd></div>
+            <div><dt>Default tool</dt><dd><span class="file-chip tool">Canvas</span><small>Optional: open every session in a specific tool (introduced in Module 4)</small></dd></div>
+          </dl>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature"><h4>Consistency</h4><p>The same rules every time: your citation style, British or American spelling, "never invent references", "ask before rewriting".</p></div>
+          <div class="feature"><h4>Context that sticks</h4><p>Knowledge files such as your faculty's thesis guidelines or a journal's author instructions are applied without you re-uploading them.</p></div>
+          <div class="feature"><h4>Shareable</h4><p>Share a Gem by link (view or edit), for example a supervisor's feedback checklist for the whole research group.</p></div>
+        </div>
+
+        <p>Three Gems that work well for academic drafting and documentation (paste into the <strong>Instructions</strong> box):</p>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Gem: Thesis Structure Coach</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You are a thesis structure coach for a [Master's / PhD] student in [field]. Use the attached thesis guidelines as the authority on structure and formatting.
+When I share notes or a draft: (1) map it against the required chapter structure, (2) list missing or misplaced elements, (3) ask up to three questions that would strengthen the argument.
+Never write full paragraphs for me. Never invent references, data or quotations. Use [British/American] English.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Gem: Methods &amp; Documentation Assistant</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You turn my rough lab notes, field notes or analysis logs into clear, structured documentation.
+For every input: organise it under the headings Aim, Materials/Data, Procedure, Analysis, Software and versions, and Deviations. Write in past tense and passive or "we" voice as I specify.
+Flag with [MISSING] any detail a reviewer would need to replicate the work (sample sizes, parameters, versions, dates, ethics approval numbers). Do not fill gaps with guesses.</pre>
+        </div>
+
+        <div class="prompt">
+          <div class="prompt-head"><span>Gem: Journal Formatting Checker</span><button class="copy-btn" type="button">Copy</button></div>
+          <pre>You check manuscripts against the attached author guidelines for [journal]. Report, as a table: requirement | where my draft meets or misses it | suggested fix.
+Check word limits, section order, abstract structure, heading levels, reference style and declarations (funding, conflicts of interest, AI use, data availability). Do not change my wording.</pre>
+        </div>
+
+        <div class="callout callout-warn">
+          <h3>Gems follow your account's privacy rules</h3>
+          <p>Knowledge files you attach are handled under the same terms as your chats (see 1.4). On a personal Free, AI Plus or AI Pro account, don't attach unpublished data, participant information or other people's manuscripts. Build research Gems in your <strong>Workspace for Education</strong> account. When you share a Gem, check what its instructions and files reveal before sending the link.</p>
+        </div>
+
         <div class="exercise">
           <h3>Hands-on exercise 2</h3>
-          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 15 min</p>
+          <p class="ex-part"><span class="ex-tag">Core</span>In the workshop · about 25 min</p>
+          <p class="ex-sub">Part A: better prompts</p>
           <ol>
             <li>Write a one-line "weak" prompt for a task from your current writing.</li>
             <li>Rewrite it using all five RTCFC elements (2.1), following the weak vs. strong example (2.2).</li>
             <li>Run both and compare. Then refine the strong version with at least two follow-up prompts (2.3), including "If you are unsure, say so."</li>
           </ol>
-          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <p class="ex-sub">Part B: build your academic writing Gem (2.5)</p>
           <ol start="4">
+            <li>Copy the <strong>"Build a Gem"</strong> template (2.4), fill in the brackets, and paste it into a new Gem (<em>Gems → New Gem</em>) called <strong>"My Academic Writing Assistant"</strong>.</li>
+            <li>Test it on one paragraph of your own writing. Did it follow every instruction?</li>
+            <li>Make one ignored instruction clearer, save, and test again.</li>
+          </ol>
+          <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
+          <ol start="7">
             <li>Run the Socratic partner template (2.4) on your own research argument and answer all five questions. Which question exposed the weakest point?</li>
+            <li>Add a knowledge file to your Gem, such as your faculty's thesis guidelines or a target journal's author instructions, and check that its feedback now refers to them.</li>
             <li>Save the prompts that worked best into a personal prompt library (a Google Doc) to reuse after the workshop.</li>
           </ol>
         </div>
@@ -781,7 +836,7 @@ After the review, list every source you cited and the claim it supports, so I ca
         <header class="module-head">
           <p class="eyebrow">Module 4</p>
           <h1>Drafting &amp; Structure</h1>
-          <p class="lead">Move from ideas to a well-organised draft, using Gemini (including Gems, Canvas and Nano Banana diagrams) as a scaffold while the argument and words stay yours.</p>
+          <p class="lead">Move from ideas to a well-organised draft, using Gemini (including Canvas and Nano Banana diagrams) as a scaffold while the argument and words stay yours.</p>
         </header>
 
         <div class="objectives">
@@ -791,7 +846,7 @@ After the review, list every source you cited and the claim it supports, so I ca
             <li>Strengthen paragraph structure and logical flow</li>
             <li>Draft and refine abstracts and introductions with AI feedback</li>
             <li>Report Results accurately and write a Discussion that matches your evidence</li>
-            <li>Build Gems as reusable drafting assistants and use Canvas for quick drafting and documentation</li>
+            <li>Use Canvas for quick drafting, documentation and side-by-side editing</li>
             <li>Create research diagrams with Nano Banana responsibly, and build editable figures as draw.io code in Canvas</li>
           </ul>
         </div>
@@ -923,53 +978,7 @@ Propose a Discussion outline using five moves: restate the key finding, compare 
 [paste Discussion]</pre>
         </div>
 
-        <h2>4.7 Gems: reusable assistants for drafting</h2>
-        <p>A <strong>Gem</strong> is a saved Gemini assistant with your standing instructions, so you don't have to retype the same long prompt every session. Gems are available on all plans, including Free. Create one under <strong>Gems → New Gem</strong> (the left sidebar on the web).</p>
-
-        <div class="gem-mock" aria-label="Illustration of the Gem builder">
-          <div class="gem-mock-head"><span class="gem-dot" aria-hidden="true"></span>New Gem</div>
-          <dl class="gem-fields">
-            <div><dt>Name</dt><dd>Thesis Structure Coach</dd></div>
-            <div><dt>Instructions</dt><dd>The role, rules and output format: what the Gem must always and never do.</dd></div>
-            <div><dt>Knowledge</dt><dd><span class="file-chip">Thesis_Guidelines_2026.pdf</span><span class="file-chip">Chapter2_draft.docx</span><small>Up to 10 files, including from Google Drive</small></dd></div>
-            <div><dt>Default tool</dt><dd><span class="file-chip tool">Canvas</span><small>Optional: open every session in a specific tool</small></dd></div>
-          </dl>
-        </div>
-
-        <div class="feature-grid">
-          <div class="feature"><h4>Consistency</h4><p>The same rules every time: your citation style, British or American spelling, "never invent references", "ask before rewriting".</p></div>
-          <div class="feature"><h4>Context that sticks</h4><p>Knowledge files such as your faculty's thesis guidelines or a journal's author instructions are applied without you re-uploading them.</p></div>
-          <div class="feature"><h4>Shareable</h4><p>Share a Gem by link (view or edit), for example a supervisor's feedback checklist for the whole research group.</p></div>
-        </div>
-
-        <p>Three Gems that work well for academic drafting and documentation (paste into the <strong>Instructions</strong> box):</p>
-
-        <div class="prompt">
-          <div class="prompt-head"><span>Gem: Thesis Structure Coach</span><button class="copy-btn" type="button">Copy</button></div>
-          <pre>You are a thesis structure coach for a [Master's / PhD] student in [field]. Use the attached thesis guidelines as the authority on structure and formatting.
-When I share notes or a draft: (1) map it against the required chapter structure, (2) list missing or misplaced elements, (3) ask up to three questions that would strengthen the argument.
-Never write full paragraphs for me. Never invent references, data or quotations. Use [British/American] English.</pre>
-        </div>
-
-        <div class="prompt">
-          <div class="prompt-head"><span>Gem: Methods &amp; Documentation Assistant</span><button class="copy-btn" type="button">Copy</button></div>
-          <pre>You turn my rough lab notes, field notes or analysis logs into clear, structured documentation.
-For every input: organise it under the headings Aim, Materials/Data, Procedure, Analysis, Software and versions, and Deviations. Write in past tense and passive or "we" voice as I specify.
-Flag with [MISSING] any detail a reviewer would need to replicate the work (sample sizes, parameters, versions, dates, ethics approval numbers). Do not fill gaps with guesses.</pre>
-        </div>
-
-        <div class="prompt">
-          <div class="prompt-head"><span>Gem: Journal Formatting Checker</span><button class="copy-btn" type="button">Copy</button></div>
-          <pre>You check manuscripts against the attached author guidelines for [journal]. Report, as a table: requirement | where my draft meets or misses it | suggested fix.
-Check word limits, section order, abstract structure, heading levels, reference style and declarations (funding, conflicts of interest, AI use, data availability). Do not change my wording.</pre>
-        </div>
-
-        <div class="callout callout-warn">
-          <h3>Gems follow your account's privacy rules</h3>
-          <p>Knowledge files you attach are handled under the same terms as your chats (see 1.4). On a personal Free, AI Plus or AI Pro account, don't attach unpublished data, participant information or other people's manuscripts. Build research Gems in your <strong>Workspace for Education</strong> account. When you share a Gem, check what its instructions and files reveal before sending the link.</p>
-        </div>
-
-        <h2>4.8 Canvas: draft and edit side by side</h2>
+        <h2>4.7 Canvas: draft and edit side by side</h2>
         <p><strong>Canvas</strong> opens a document editor next to the chat. Instead of copying text back and forth, you and Gemini work on the same document: highlight any passage and ask for a change, adjust length or tone with one click, and export the result to Google Docs. Turn it on by choosing <strong>Canvas</strong> from the tools menu in the prompt box (or set it as a Gem's default tool).</p>
 
         <div class="canvas-mock" aria-label="Illustration of Canvas: chat on the left, document on the right with a highlighted passage and an edit menu">
@@ -992,7 +1001,7 @@ Check word limits, section order, abstract structure, heading levels, reference 
         <div class="feature-grid">
           <div class="feature"><h4>Research admin</h4><p>Data management plans, ethics application sections, progress reports, conference travel justifications.</p></div>
           <div class="feature"><h4>Records</h4><p>Supervision meeting minutes, lab protocols and SOPs, decision logs for your methodology chapter.</p></div>
-          <div class="feature"><h4>Data, code and diagram docs</h4><p>README files, codebooks and variable dictionaries. Canvas also writes code, including draw.io diagram code (see 4.9).</p></div>
+          <div class="feature"><h4>Data, code and diagram docs</h4><p>README files, codebooks and variable dictionaries. Canvas also writes code, including draw.io diagram code (see 4.8).</p></div>
         </div>
 
         <div class="prompt">
@@ -1017,10 +1026,10 @@ Check word limits, section order, abstract structure, heading levels, reference 
 
         <div class="callout callout-tip">
           <h3>Gems + Canvas = a reusable drafting workspace</h3>
-          <p>Set your <em>Methods &amp; Documentation Assistant</em> Gem's default tool to Canvas. Every time you open it, you get a document ready to fill, with your rules already applied.</p>
+          <p>Set your <em>Methods &amp; Documentation Assistant</em> Gem's default tool to Canvas (see 2.5). Every time you open it, you get a document ready to fill, with your rules already applied.</p>
         </div>
 
-        <h2>4.9 Research diagrams with Nano Banana</h2>
+        <h2>4.8 Research diagrams with Nano Banana</h2>
         <p><strong>Nano Banana</strong> is the nickname for Gemini's image-generation models. Besides pictures, they can produce <strong>diagrams with readable labels</strong>: conceptual frameworks, research-design flowcharts and process overviews. You can also turn a photo of a whiteboard sketch into a clean draft. Choose <strong>Create image</strong> from the tools menu in the prompt box, or simply ask for a diagram.</p>
 
         <div class="feature-grid">
@@ -1255,13 +1264,13 @@ Please give me ONE code block only, starting with &lt;mxfile&gt; and ending with
           <ol>
             <li>Choose one paragraph from your own draft and run the paragraph diagnostic (4.3). Alternatively, run the abstract checker (4.4) on your abstract or the CARS critique (4.5) on your introduction.</li>
             <li>Revise the paragraph yourself, then compare before and after with a partner.</li>
-            <li>Create a Gem from one of the 4.7 templates. Add one knowledge file (e.g. your faculty's thesis guidelines) and set its default tool to Canvas.</li>
-            <li>In that Gem, turn the notes from your last supervision meeting (or a lab session) into a structured document. Highlight one passage and ask Canvas (4.8) to make it more concise, then export to Google Docs and resolve every [MISSING] marker yourself.</li>
+            <li>Open the Gem you built in Exercise 2. Add one knowledge file (e.g. your faculty's thesis guidelines) and set its default tool to Canvas.</li>
+            <li>In that Gem, turn the notes from your last supervision meeting (or a lab session) into a structured document. Highlight one passage and ask Canvas (4.7) to make it more concise, then export to Google Docs and resolve every [MISSING] marker yourself.</li>
           </ol>
           <p class="ex-part ex-ext"><span class="ex-tag">Extension</span>After the workshop, at your own pace</p>
           <ol start="5">
             <li>Write your current paper's main argument in two sentences and generate an outline (4.1, 4.2).</li>
-            <li>Sketch your study's conceptual framework or research design on paper. Photograph it and use the "sketch to clean diagram" prompt with Nano Banana. Run the "Before you use an AI diagram" checklist. Then rebuild the same diagram as draw.io code in Canvas (the worked example in 4.9), open it in draw.io and fix it by hand. Which version would you put in your thesis, and why?</li>
+            <li>Sketch your study's conceptual framework or research design on paper. Photograph it and use the "sketch to clean diagram" prompt with Nano Banana. Run the "Before you use an AI diagram" checklist. Then rebuild the same diagram as draw.io code in Canvas (the worked example in 4.8), open it in draw.io and fix it by hand. Which version would you put in your thesis, and why?</li>
                       <li>Take one results table from your own study (summary results only). Run the "Results paragraph from my table" prompt (4.6), then the consistency check, and compare every number with your output. Finish with the overclaiming check on your Discussion.</li>
           </ol>
         </div>
@@ -1405,7 +1414,7 @@ Please give me ONE code block only, starting with &lt;mxfile&gt; and ending with
           <div><span>1</span><p><strong>Collect</strong> 2–3 samples of your best writing (500+ words each)</p></div>
           <div><span>2</span><p><strong>Analyse</strong> your style with the prompt below</p></div>
           <div><span>3</span><p><strong>Edit</strong> the profile: keep what you like, drop habits you want to lose</p></div>
-          <div><span>4</span><p><strong>Save</strong> it in a Gem (see 4.7) so it applies every time</p></div>
+          <div><span>4</span><p><strong>Save</strong> it in a Gem (see 2.5) so it applies every time</p></div>
           <div><span>5</span><p><strong>Draft</strong> from your own notes, data and argument</p></div>
           <div><span>6</span><p><strong>Revise</strong> by hand and read it aloud: does it sound like you?</p></div>
         </div>
@@ -1545,7 +1554,7 @@ NOTES: [paste]</pre>
               <tr><td><span class="sym">American spelling, or the wrong language</span></td><td>No language variant stated</td><td>"Use British English throughout" or "Reply in Bahasa Melayu"; add it to your Gem's instructions</td></tr>
               <tr><td><span class="sym">Stuck on an old idea, or repeating itself</span></td><td>Earlier messages in a long chat are steering the output</td><td>Start a fresh chat with a clean summary of what you need (see the reset prompt below)</td></tr>
               <tr><td><span class="sym">Misses part of a long document</span></td><td>Too much text for one request (the context window, 1.2)</td><td>Work section by section, or put the document in Gemini Notebook</td></tr>
-              <tr><td><span class="sym">Rewrote the whole text when you wanted one change</span></td><td>The request covered everything</td><td>Use Canvas (4.8): highlight only the passage to change</td></tr>
+              <tr><td><span class="sym">Rewrote the whole text when you wanted one change</span></td><td>The request covered everything</td><td>Use Canvas (4.7): highlight only the passage to change</td></tr>
             </tbody>
           </table>
         </div>
@@ -1608,7 +1617,7 @@ Rewrite the text below to match that example's sentence length, hedging and tone
 
         <div class="callout callout-warn">
           <h3>Pushing back is not fact-checking</h3>
-          <p>If you tell Gemini "that's wrong", it will often agree and change its answer, even when the original was right or your correction is wrong. Its agreement proves nothing. For anything factual, check the source yourself (3.7). When a fix works, add the rule to your Gem's instructions (4.7) so you don't have to repeat it.</p>
+          <p>If you tell Gemini "that's wrong", it will often agree and change its answer, even when the original was right or your correction is wrong. Its agreement proves nothing. For anything factual, check the source yourself (3.7). When a fix works, add the rule to your Gem's instructions (2.5) so you don't have to repeat it.</p>
         </div>
 
         <h2>5.7 Responding to reviewer comments</h2>
@@ -1772,7 +1781,7 @@ R1.2 — …</pre>
           <li class="lv lv3">
             <span class="lv-num">Level 3</span>
             <div class="lv-body"><h4>Open use</h4><p class="lv-def">"AI may support learning and content development with proper declaration."</p></div>
-            <p class="lv-map">Gemini Notebook (3.4), outlining and drafting support (Module 4), Gems, Canvas and voice profiles (4.7, 4.8, 5.5), all declared.</p>
+            <p class="lv-map">Gemini Notebook (3.4), outlining and drafting support (Module 4), Gems, Canvas and voice profiles (2.5, 4.7, 5.5), all declared.</p>
           </li>
           <li class="lv lv4">
             <span class="lv-num">Level 4</span>
@@ -1821,7 +1830,7 @@ R1.2 — …</pre>
             <tbody>
               <tr><td>12 Oct 2026</td><td>Gemini Notebook</td><td>Compare 8 papers on feedback literacy</td><td>Cross-source comparison prompt (3.4)</td><td>Notes for my literature review; rewritten in my own words</td><td>✔ All 8 citations checked</td></tr>
               <tr><td>15 Oct 2026</td><td>Gemini (Canvas)</td><td>Grammar check, Chapter 2</td><td>Track-changes style edit (5.2)</td><td>Accepted 14 of 22 suggestions</td><td>✔ Meaning unchanged</td></tr>
-              <tr><td>18 Oct 2026</td><td>Gemini (Canvas)</td><td>draw.io code for conceptual framework figure</td><td>Canvas prompt for draw.io code (4.9)</td><td>Opened in draw.io; layout and labels edited; exported as SVG</td><td>✔ Approved by supervisor</td></tr>
+              <tr><td>18 Oct 2026</td><td>Gemini (Canvas)</td><td>draw.io code for conceptual framework figure</td><td>Canvas prompt for draw.io code (4.8)</td><td>Opened in draw.io; layout and labels edited; exported as SVG</td><td>✔ Approved by supervisor</td></tr>
             </tbody>
           </table>
         </div>
@@ -1957,7 +1966,7 @@ The research questions, data, analysis, interpretation and conclusions are my ow
           <a class="lesson" href="#module-4">
             <span class="card-num">04</span>
             <h3>Drafting &amp; Structure</h3>
-            <p><strong>You write, it scaffolds.</strong> Numbers in Results come only from your own output, and claims match your evidence. Use Gems for repeat tasks, Canvas for quick documents and editable draw.io diagrams, and Nano Banana for quick diagram drafts, never for data figures.</p>
+            <p><strong>You write, it scaffolds.</strong> Numbers in Results come only from your own output, and claims match your evidence. Use Gems for repeat tasks (Module 2), Canvas for quick documents and editable draw.io diagrams, and Nano Banana for quick diagram drafts, never for data figures.</p>
           </a>
           <a class="lesson" href="#module-5">
             <span class="card-num">05</span>
@@ -1982,11 +1991,11 @@ The research questions, data, analysis, interpretation and conclusions are my ow
               <tr><td>Summarise and compare papers you have</td><td><strong>Gemini Notebook</strong></td><td>Click every citation to check it</td><td><a href="#module-3">3.4</a></td></tr>
               <tr><td>Draft a short literature review from those papers</td><td><strong>Notebook → Gemini app</strong></td><td>Only notebook sources; [NEED SOURCE] for gaps</td><td><a href="#module-3">3.6</a></td></tr>
               <tr><td>Get a quick web overview of a topic</td><td><strong>Deep Research</strong></td><td>Web only; verify every source</td><td><a href="#module-1">1.5</a></td></tr>
-              <tr><td>Repeat the same task with the same rules</td><td><strong>Gems</strong></td><td>Files follow your account's privacy rules</td><td><a href="#module-4">4.7</a></td></tr>
+              <tr><td>Repeat the same task with the same rules</td><td><strong>Gems</strong></td><td>Files follow your account's privacy rules</td><td><a href="#module-2">2.5</a></td></tr>
               <tr><td>Turn my analysis output into Results text</td><td><strong>Gemini chat</strong> with my table</td><td>Numbers only from your output; check each one</td><td><a href="#module-4">4.6</a></td></tr>
-              <tr><td>Draft minutes, plans, READMEs</td><td><strong>Canvas</strong></td><td>Fill every [MISSING] marker yourself</td><td><a href="#module-4">4.8</a></td></tr>
-              <tr><td>Sketch a framework or flowchart quickly</td><td><strong>Nano Banana</strong></td><td>A flat image; no data figures; check the venue's rules</td><td><a href="#module-4">4.9</a></td></tr>
-              <tr><td>Make an editable thesis or paper figure</td><td><strong>draw.io code from Canvas</strong></td><td>Paste into Extras → Edit Diagram; keep the .drawio file</td><td><a href="#module-4">4.9</a></td></tr>
+              <tr><td>Draft minutes, plans, READMEs</td><td><strong>Canvas</strong></td><td>Fill every [MISSING] marker yourself</td><td><a href="#module-4">4.7</a></td></tr>
+              <tr><td>Sketch a framework or flowchart quickly</td><td><strong>Nano Banana</strong></td><td>A flat image; no data figures; check the venue's rules</td><td><a href="#module-4">4.8</a></td></tr>
+              <tr><td>Make an editable thesis or paper figure</td><td><strong>draw.io code from Canvas</strong></td><td>Paste into Extras → Edit Diagram; keep the .drawio file</td><td><a href="#module-4">4.8</a></td></tr>
               <tr><td>Keep drafts in your own style</td><td><strong>Voice profile</strong> in a Gem</td><td>Personalised still means declared</td><td><a href="#module-5">5.5</a></td></tr>
               <tr><td>Respond to reviewer comments</td><td><strong>Gemini</strong> on your Workspace account</td><td>You decide; every response must match a real change</td><td><a href="#module-5">5.7</a></td></tr>
               <tr><td>Fix an output that missed the mark</td><td><strong>The recovery routine</strong></td><td>Name the problem, give specific feedback, reset if needed</td><td><a href="#module-5">5.6</a></td></tr>
@@ -2072,7 +2081,7 @@ The research questions, data, analysis, interpretation and conclusions are my ow
     </div>
   </footer>
 
-  <script src="js/app.js?v=2026-10-06i"></script>
-  <script src="js/slides.js?v=2026-10-06i"></script>
+  <script src="js/app.js?v=2026-10-06k"></script>
+  <script src="js/slides.js?v=2026-10-06k"></script>
 </body>
 </html>

@@ -327,6 +327,9 @@ code { font-family: var(--font-mono); font-size: .88em; }
   font-size: .7rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
   padding: 2px 9px; border-radius: 999px; color: #fff; background: var(--accent);
 }
+.ex-sub { margin: 10px 0 4px; font-weight: 700; font-size: .92rem; color: var(--text); }
+.exercise ol ul { margin: 6px 0 4px; padding-left: 1.2em; list-style: disc; }
+.exercise ol ul li { margin-bottom: 2px; }
 .ex-ext .ex-tag { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
 .ex-ext { padding-top: 10px; border-top: 1px dashed color-mix(in srgb, var(--accent) 40%, transparent); }
 
