@@ -214,6 +214,7 @@ code { font-family: var(--font-mono); font-size: .88em; }
 .module-main > p, .module-main > ul, .module-main > ol, .module-head .lead { max-width: 80ch; }
 .module-main > .plan-table + .note { max-width: none; }
 .module-main > ul.ctx-compare { max-width: none; }
+.module-main > ol.agree-list { max-width: none; }
 
 /* Wide screens: content + sticky "On this page" menu */
 .toc { display: none; }
@@ -798,6 +799,45 @@ tbody tr:last-child td { border-bottom: 0; }
 .cr-steps li { margin-bottom: 6px; }
 .cr-note { margin: 0; font-size: .84rem; color: var(--muted); font-style: italic; }
 
+/* ===== Supervision in the AI age (Module 6.6) ===== */
+.agree-list { list-style: none; padding: 0; margin: 12px 0 18px; display: grid; gap: 10px; }
+.agree-list li {
+  display: grid; grid-template-columns: 64px minmax(0, 1fr); margin: 0; overflow: hidden;
+  background: var(--surface); border: 1.5px solid #2f62b3; border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.ag-icon { display: grid; place-items: center; background: #2f62b3; }
+.ag-icon svg { width: 28px; height: 28px; fill: none; stroke: #fff; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.agree-list li > div { padding: 12px 16px; }
+.agree-list h4 { margin: 0 0 2px; text-transform: uppercase; letter-spacing: .03em; }
+.ag-q { margin: 0; font-weight: 600; }
+.ag-eg { margin: 4px 0 0; font-size: .88rem; color: var(--muted); }
+
+.lr-rows { display: grid; gap: 8px; margin: 12px 0 10px; }
+.lr-row {
+  display: grid; grid-template-columns: 140px minmax(0, 1fr); align-items: center; gap: 12px;
+  padding: 10px 14px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow);
+}
+.lr-label { font-weight: 800; font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.lr-ok { border-left: 5px solid var(--primary); } .lr-ok .lr-label { color: var(--primary); }
+.lr-must { border-left: 5px solid var(--good); } .lr-must .lr-label { color: var(--good); }
+.lr-avoid { border-left: 5px solid var(--bad); } .lr-avoid .lr-label { color: var(--bad); }
+.lr-avoid .lr-steps span { color: var(--bad); }
+.lr-steps { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 0; font-weight: 700; }
+.lr-steps span + span::before { content: "→"; margin: 0 8px; color: var(--muted); font-weight: 400; display: inline-block; text-decoration: none; }
+@media screen and (max-width: 719px) { .lr-row { grid-template-columns: 1fr; gap: 4px; } }
+
+.resp-grid { display: grid; gap: 14px; margin: 12px 0 8px; }
+@media (min-width: 720px) { .resp-grid { grid-template-columns: 1fr 1fr; } }
+.resp-grid > div { border-radius: var(--radius); padding: 16px 20px; box-shadow: var(--shadow); }
+.resp-grid h4 { font-size: 1.05rem; margin: 0 0 8px; }
+.resp-grid ul { margin: 0; }
+.resp-student { background: #2f62b3; color: #fff; }
+.resp-student h4 { color: #fff; }
+.resp-supervisor { background: var(--surface); border: 1.5px solid #2f62b3; }
+.resp-supervisor h4 { color: #2f62b3; }
+@media (prefers-color-scheme: dark) { .resp-supervisor h4 { color: var(--primary); } }
+.resp-outcome { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 10px 0 16px; }
+
 /* ===== Hover lift: boxes and bubbles pop up slightly under the mouse =====
    Only on devices with a real pointer (no sticky hover on touch screens),
    and never when the visitor has asked for reduced motion. */
@@ -805,14 +845,14 @@ tbody tr:last-child td { border-bottom: 0; }
   /* Larger content boxes: gentle lift */
   .objectives, .callout, .exercise, .note, .prompt, .table-wrap, .plan-table,
   .pro-box, .con-box, .compare > div, .traffic > div,
-  .token-demo, .nt-demo, .risk-demo, .info-strip, .pager a, .gem-mock, .canvas-mock, .dp-demo, .fw-figure, .voice-card, .voice-compare > div, .chat-demo, .um-quote, .drawio-result, .speaker-card, .ctx-compare, .am-box, .canvas-reply {
+  .token-demo, .nt-demo, .risk-demo, .info-strip, .pager a, .gem-mock, .canvas-mock, .dp-demo, .fw-figure, .voice-card, .voice-compare > div, .chat-demo, .um-quote, .drawio-result, .speaker-card, .ctx-compare, .am-box, .canvas-reply, .resp-grid > div {
     position: relative;
     transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
   }
   .objectives:hover, .callout:hover, .exercise:hover, .note:hover, .prompt:hover,
   .table-wrap:hover, .plan-table:hover, .pro-box:hover, .con-box:hover,
   .compare > div:hover, .traffic > div:hover, .token-demo:hover, .nt-demo:hover,
-  .risk-demo:hover, .info-strip:hover, .pager a:hover, .gem-mock:hover, .canvas-mock:hover, .dp-demo:hover, .fw-figure:hover, .voice-card:hover, .voice-compare > div:hover, .chat-demo:hover, .um-quote:hover, .drawio-result:hover, .speaker-card:hover, .ctx-compare:hover, .am-box:hover, .canvas-reply:hover {
+  .risk-demo:hover, .info-strip:hover, .pager a:hover, .gem-mock:hover, .canvas-mock:hover, .dp-demo:hover, .fw-figure:hover, .voice-card:hover, .voice-compare > div:hover, .chat-demo:hover, .um-quote:hover, .drawio-result:hover, .speaker-card:hover, .ctx-compare:hover, .am-box:hover, .canvas-reply:hover, .resp-grid > div:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lift);
     z-index: 1;
@@ -820,12 +860,12 @@ tbody tr:last-child td { border-bottom: 0; }
 
   /* Small cards and bubbles: a little more lift */
   .module-card, .feature, .framework > div, .flow > div, .layers > div,
-  .chips li, .checklist li, .info-strip > div, .lv, .lesson, .week, .recovery li {
+  .chips li, .checklist li, .info-strip > div, .lv, .lesson, .week, .recovery li, .agree-list li, .lr-row {
     position: relative;
     transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
   }
   .module-card:hover, .feature:hover, .framework > div:hover, .flow > div:hover,
-  .layers > div:hover, .chips li:hover, .checklist li:hover, .lv:hover, .lesson:hover, .week:hover, .recovery li:hover {
+  .layers > div:hover, .chips li:hover, .checklist li:hover, .lv:hover, .lesson:hover, .week:hover, .recovery li:hover, .agree-list li:hover, .lr-row:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lift);
     border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
@@ -940,6 +980,8 @@ html:has(body.printing-slides) { font-size: 16px !important; }
 .print-deck .ctx-compare li { grid-template-columns: 170px minmax(0, 1fr) 240px; grid-template-areas: "plan track size" ". fits fits"; }
 .print-deck .voice-scales li { grid-template-columns: 130px 56px minmax(80px, 1fr) 56px 150px; }
 .print-deck .module-grid { gap: 20px; }
+.print-deck .resp-grid { grid-template-columns: 1fr 1fr; }
+.print-deck .lr-row { grid-template-columns: 140px minmax(0, 1fr); }
 .sl-group > h3, .sl-group > h4 { margin: 0 0 8px; }
 .sl-group > p { margin: 0 0 10px; }
 .sl-foot {

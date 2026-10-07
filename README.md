@@ -1,82 +1,42 @@
 # Workshop: Gemini AI in Academic Writing
 
-A static training website with a front page and seven tabs (six modules plus a conclusion).
+**Website:** https://firdaussahran.github.io/gemini-workshop/
 
-- **Live site:** https://firdaussahran.github.io/gemini-workshop/ (GitHub Pages, published automatically)
-- **Staging site:** http://localhost:8080 (your local Docker copy, for checking changes before they go live)
+A one-day, hands-on training workshop on using Google Gemini responsibly and effectively in academic
+writing: faster literature work, clearer drafts and sharper editing, while keeping scholarship honest,
+original and your own.
 
-## Structure
+**Speaker:** Dr Firdaus Sahran, Senior Lecturer, Fakulti Sains Komputer & Teknologi Maklumat, Universiti Malaya
+([firdaussahran@um.edu.my](mailto:firdaussahran@um.edu.my))
 
-```
-site/                 # the website (edit content here) - this folder is what gets published
-  index.html          # front page + all 7 tabs
-  css/styles.css
-  js/app.js           # tab routing (#home, #module-1 … #module-7), copy buttons, demos
-  js/slides.js        # turns the page into 16:9 slides when printing
-  img/                # logo, speaker photo, diagram example
-  favicon.svg
-.github/workflows/pages.yml   # publishes site/ to GitHub Pages on every push to main
-nginx.conf, Dockerfile, docker-compose.yml   # local staging server
-```
+**For:** postgraduate students, early-career researchers and academic staff.
 
-## Everyday workflow: staging, then live
+> **Guiding principle:** Gemini assists; you author. Every claim, citation and conclusion must be one you
+> have checked, understood and can defend.
 
-1. **Edit** files in `site/`.
-2. **Check on staging:** run `docker compose up -d --build` and open http://localhost:8080.
-3. **Publish:** when you're happy, commit and push:
-   ```bash
-   git add -A
-   git commit -m "Describe what you changed"
-   git push
-   ```
-   GitHub publishes the update in about 1–2 minutes. Progress is shown under the repository's
-   **Actions** tab, and the live site updates when the run turns green.
+## Modules
 
-Nothing reaches the live site until you push, so you can experiment freely on staging.
+| | Module | What it covers |
+|---|---|---|
+| 1 | **Getting Started with Gemini** | How a large language model generates text (tokens, prediction, context window); Free vs Google AI Plus/Pro vs Workspace for Education, with Malaysian pricing and data protection; strengths and limitations |
+| 2 | **Prompting Essentials** | The RTCFC prompt framework (role, task, context, format, constraints); refining output through conversation; prompt templates; building Gems as reusable writing assistants |
+| 3 | **Literature & Research** | Why Gemini can't search Web of Science, Scopus or paywalled databases; grounding your reading in Gemini Notebook; synthesis matrices; drafting a short literature review from a notebook; verifying every source |
+| 4 | **Drafting & Structure** | Outlines, paragraph structure, abstracts and introductions (CARS model); Results and Discussion without overclaiming; Canvas for quick documentation; research diagrams with Nano Banana and editable draw.io figures |
+| 5 | **Editing & Language** | Layered editing; simulated peer review; paraphrasing responsibly; drafting in your own voice from your past papers; fixing output that misses the mark; responding to reviewer comments |
+| 6 | **Ethics & Integrity** | Universiti Malaya's AI policy and the five levels of AI use; thesis and journal disclosure; data privacy; AI detectors; supervision in the AI age, including a supervisor–student AI-use agreement |
+| 7 | **Conclusion & Next Steps** | Key lessons, a toolkit for choosing the right Gemini feature, five questions to ask before every use, and a four-week plan to keep learning |
 
-## One-time setup on GitHub
+## What you'll find on the site
 
-1. Sign in at https://github.com as **firdaussahran** and create a new repository:
-   - name: **gemini-workshop**
-   - visibility: **Public** (free GitHub Pages needs a public repository)
-   - leave "Add a README", ".gitignore" and "license" **unticked** (this project already has them)
-2. In this folder, push for the first time:
-   ```bash
-   git push -u origin main
-   ```
-   When asked for a password, use a **personal access token**, not your GitHub password
-   (GitHub → Settings → Developer settings → Personal access tokens → Fine-grained token with
-   *Contents: Read and write* and *Workflows: Read and write* for this repository).
-   Alternatively, use GitHub Desktop, which signs you in through the browser.
-3. On GitHub, open the repository's **Settings → Pages**, and under **Build and deployment**
-   set **Source** to **GitHub Actions**.
-4. Open the **Actions** tab. If the first run failed because Pages wasn't switched on yet,
-   click it and choose **Re-run all jobs**. When it's green, the site is live at
-   https://firdaussahran.github.io/gemini-workshop/.
+- **Ready-to-use prompts** with copy buttons, written for academic tasks
+- **Hands-on exercises** in every module, split into *Core* (in the workshop) and *Extension* (after it)
+- **Interactive illustrations**, such as a step-by-step next-token prediction demo
+- **Universiti Malaya context**: UM AI policy, Workspace for Education accounts and Bahasa Melayu examples
+- **Printable slides**: "Print this module" or "Print full workbook" saves the content as a 16:9 slide deck (PDF)
 
-### Other hosting options
-The site is plain HTML/CSS/JS, so it can also be hosted elsewhere: upload the **contents of
-`site/`** to any web host (for example `public_html/` on cPanel), or run the Docker setup on
-a server with `docker compose up -d --build` behind an HTTPS proxy.
+## Please note
 
-## Editing content
-Each module is a `<section data-page="module-N">` block in `site/index.html`. To rename
-a tab, edit both the tab label in the `<nav>` and the module's `<h1>`.
-
-## Speaker photo
-The front page shows the speaker photo from `site/img/speaker.png` (transparent background,
-so the card's gradient shows behind it) with `site/img/speaker.webp` for modern browsers.
-To change it, replace both files with a square image (at least 320 × 320 px) and rebuild
-(`docker compose up -d --build`). If the photo is missing, the initials are shown instead.
-To change the speaker's name or title, edit the `speaker-card` block near the top of `site/index.html`.
-
-## Printing (slides)
-"Print this module", "Print full workbook" and Ctrl/Cmd+P all produce 16:9 landscape slides
-(13.33 × 7.5 in), built by `site/js/slides.js` just before printing:
-- a dark title slide per module (and for the workshop, with the speaker card), then one slide per section;
-- long sections continue on "(cont.)" slides, and blocks too tall for one slide are scaled to fit;
-- exercises and takeaways get their own slides; slides always print in light colours.
-
-In the print dialog choose **Save as PDF**. Chrome and Edge pick up the slide size automatically.
-In Safari or Firefox, set margins to **None**, turn off **headers and footers**, and turn on
-**background graphics** if the slides look plain.
+Gemini's features, plan limits and prices, and institutional and publisher AI policies change often. The
+content reflects the situation in 2026; always check the latest official guidance, your supervisor's
+instructions and your target journal's rules. This workshop is not affiliated with Google. Gemini is a
+trademark of Google LLC.
